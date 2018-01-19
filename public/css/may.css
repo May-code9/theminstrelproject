@@ -1,0 +1,172 @@
+@media (min-width: 768px) {
+  .push-1 {
+    left: 11.66666666666666%;
+  }
+}
+
+@media (min-width: 992px) {
+  .push-1 {
+    left: 11.66666666666666%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .push-1 {
+    left: 12.66666666666666%;
+  }
+}
+/* @media (max-width: 768px) {
+th, td {
+border: none;
+padding:10px;
+text-align:left;
+}
+}
+@media (min-width: 768px) {
+th, td {
+border: none;
+padding:4px;
+text-align:left;
+}
+}
+
+@media (min-width: 1200px) {
+th, td {
+padding: 5px;
+text-align:left;
+}
+} */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+.inline {
+  float: left;
+  border: none;
+  padding:10px;
+  text-align:left;
+}
+.idClass {
+  width: 5%;
+}
+.betClass {
+  width: 9%;
+}
+.clubClass {
+  width: 9%;
+}
+.dateClass {
+  width: 8%;
+}
+.scoreClass {
+  width:6%;
+}
+.leagueClass {
+  width:12%;
+}
+
+/*tr:nth-child(even){background-color: rgba(60, 59, 59, 0.49);}*/
+
+#tableRes {
+  background: rgba(0,0,0,.8);
+  padding: 20px;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+.betBtn {
+  margin: 5px;
+  padding:10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  color:white!important;
+  background-color: rgba(252, 252, 252, 0.48);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.betBtn:hover {
+  color: black!important;
+  background-color: #4CAF50;
+}
+.selectSmall {
+  margin-left:5px;
+  width:70%;
+}
+@media only screen and (min-width: 320px) {
+  .scrollOut {
+    overflow-x: scroll;
+    width: 310px;
+  }
+  .scrollIn {
+    width: 1200px;
+  }
+}
+@media only screen and (min-width: 460px) {
+  .scrollOut {
+    overflow-x: scroll;
+    width: 450px;
+  }
+  .scrollIn {
+    width: 2000px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .scrollOut {
+    overflow-x: scroll;
+    width: 740px;
+  }
+  .scrollIn {
+    width: 2000px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .scrollOut {
+    overflow-x: scroll;
+    width: 880px;
+  }
+  .scrollIn {
+    width: 2000px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .scrollOut {
+    overflow-x: hidden;
+    width: 1500px;
+  }
+  .scrollIn {
+    width: 1500px;
+  }
+}
+.liner {
+  border-top-color: rgba(252, 252, 252, 0.48);
+  border-right-color: rgba(252, 252, 252, 0.48);
+  border-bottom-color: rgba(252, 252, 252, 0.48);
+  border-left-color: rgba(252, 252, 252, 0.48);
+  margin: 10px 0 0px;
+}
+.list-group-item {
+  padding: 10px 15px!important;
+}
+.panel-heading {
+  padding: 1px 15px;
+}
+.btn-group-lg > .btn, .btn-lg {
+    padding: 15px 0;
+}
+#better {
+    position: relative;
+    width: 17%;
+    margin: 0 auto;
+}
+.answer input {
+  width: calc(100% - 160px);
+}
+.text-colour {
+  color:#cfab6b;
+}
+.just {
+  text-align:justify;
+}
