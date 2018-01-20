@@ -22,25 +22,33 @@ class MinstrelProjectController extends Controller
     public function gallery() {
       $gallery = 'active';
       $cover = 'Gallery';
-      $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
+      if(Auth::user()) {
+        $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
+      }
       return view('pages.gallery', compact('gallery', 'cover', 'checkIfAdmin'));
     }
     public function donate() {
       $donate = 'active';
       $cover = 'Donate';
-      $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
+      if(Auth::user()) {
+        $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
+      }
       return view('pages.donate', compact('donate', 'cover', 'checkIfAdmin'));
     }
     public function contact() {
       $contact = 'active';
       $cover = 'Contact';
-      $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
+      if(Auth::user()) {
+        $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
+      }
       return view('pages.contacts', compact('contact', 'cover', 'checkIfAdmin'));
     }
     public function about() {
       $about = 'active';
       $cover = 'About';
-      $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
+      if(Auth::user()) {
+        $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
+      }
       return view('pages.about', compact('about', 'cover', 'checkIfAdmin'));
     }
     public function teller() {

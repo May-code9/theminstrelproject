@@ -32,7 +32,7 @@
                     @elseif($checkForSerialNumber == 0)
                     <a href="{{ route('minstrelTeller') }}" class="btn btn-madison btn-ellipse">Fill Teller Number</a>
                     @endguest
-                    <div class="inset-xs-left-30 reveal-lg-inline-block"><a href="#" class="btn btn-primary-transparent btn-ellipse veil reveal-lg-inline-block">Learn More</a></div>
+                    <div class="inset-xs-left-30 reveal-lg-inline-block"><a href="{{ route('minstrelAbout') }}" class="btn btn-primary-transparent btn-ellipse veil reveal-lg-inline-block">Learn More</a></div>
                   </div>
                 </div>
               </div>
@@ -56,7 +56,7 @@
                     @elseif($checkForSerialNumber == 0)
                     <a href="{{ route('minstrelTeller') }}" class="btn btn-madison btn-ellipse">Fill Teller Number</a>
                     @endguest
-                    <div class="inset-xs-left-30 reveal-lg-inline-block"><a href="#" class="btn btn-primary-transparent btn-ellipse veil reveal-lg-inline-block">Learn More</a></div>
+                    <div class="inset-xs-left-30 reveal-lg-inline-block"><a href="{{ route('minstrelAbout') }}" class="btn btn-primary-transparent btn-ellipse veil reveal-lg-inline-block">Learn More</a></div>
                   </div>
                 </div>
               </div>
@@ -75,7 +75,7 @@
                     <h4 class="text-regular font-default">With us, your kid will enjoy plenty of different activities that will develop them and act as a perfect ground for further development. Explore the bright future of your child at {{ config('app.name') }}!</h4>
                   </div>
                   <div data-caption-animate="fadeInUp" data-caption-delay="400" data-caption-duration="1700" class="offset-top-20 offset-xl-top-40"><a href="{{ route('register') }}" class="btn btn-ellipse btn-madison">Sign Up for Excursion</a>
-                    <div class="inset-xs-left-30 reveal-lg-inline-block"><a href="academic.php" class="btn btn-ellipse btn-primary-transparent veil reveal-lg-inline-block">Learn More</a></div>
+                    <div class="inset-xs-left-30 reveal-lg-inline-block"><a href="{{ route('minstrelAbout') }}" class="btn btn-ellipse btn-primary-transparent veil reveal-lg-inline-block">Learn More</a></div>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@
       <div class="range text-sm-left range-sm-justify" style="margin-bottom: 45px;">
         <div class="cell-sm-7 view-animate fadeInRightSm delay-04">
           <div class="img-wrap-2">
-            <figure><span data-toggle="modal" data-target="#myModal" class=""></span><img src="images/home-01-620-350.jpg" width="620" height="350" alt="" class="img-responsive reveal-inline-block"></figure>
+            <figure><span data-toggle="modal" data-target="#myModal" class=""></span><img src="images/home-01-620-350.png" width="620" height="350" alt="" class="img-responsive reveal-inline-block"></figure>
           </div>
         </div>
         <div class="cell-sm-5 offset-top-50 offset-sm-top-0">
@@ -101,7 +101,7 @@
           <div class="offset-top-35 offset-md-top-60 view-animate fadeInLeftSm delay-08">
             <p style="font-size: 17px; text-align: justify">{{ config('app.name') }} is a talent hunt reality tv show property crafted to scout, develop, mentor and reward young talents in the gospel music industry. The talent hunt reality tv show first edition will run for three months, on selected national television channels, the participants must be between the age of 12 -22 years.</p>
           </div>
-          <div class="offset-top-30 view-animate fadeInLeftSm delay-1"><a href="#" class="btn btn-ellipse btn-icon btn-icon-right btn-default"><span class="icon fa-arrow-right"></span><span>Learn More</span></a></div>
+          <div class="offset-top-30 view-animate fadeInLeftSm delay-1"><a href="{{ route('minstrelAbout') }}" class="btn btn-ellipse btn-icon btn-icon-right btn-default"><span class="icon fa-arrow-right"></span><span>Learn More</span></a></div>
         </div>
       </div>
     </div>

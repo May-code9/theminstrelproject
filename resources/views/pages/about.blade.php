@@ -9,7 +9,7 @@ About Us | {{ config('app.name') }}
     <div class="hr bg-gray-light"></div>
   </div>
   <!--A Meeting of Minds-->
-  <section class="section-70 section-md-114">
+  <section class="section-70">
     <div class="shell">
       <div class="range">
         <div class="cell-sm-4 cell-sm-push-2 text-sm-left">
@@ -70,16 +70,18 @@ About Us | {{ config('app.name') }}
       </div>
     </div>
   </section>
+
   <!-- Images-->
-  <section>
+  <section class="bg-index-body">
     <div class="shell-wide">
       <div class="range">
-        <div class="cell-sm-4"><img src="images/minstrelProject.jpg" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
+        <div class="cell-sm-4"><img src="images/minstrelProject3.png" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
+        <div class="cell-sm-4"><img src="images/minstrelProject.png" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
         <div class="cell-sm-4"><img src="images/minstrelProject2.jpg" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
-        <div class="cell-sm-4"><img src="images/minstrelProject.jpg" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
       </div>
     </div>
   </section>
+
 </main>
 <!-- Page Footer-->
 @endsection
