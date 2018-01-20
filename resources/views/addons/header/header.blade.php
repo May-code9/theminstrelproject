@@ -32,7 +32,7 @@
                 <ul class="rd-navbar-nav">
                   <li class="@if(isset($home)) {{ $home }} @endif"><a href="{{ route('minstrelHome') }}">Home</a>
                   </li>
-                  <li class=""><a href="#">About</a>
+                  <li class="@if(isset($about)) {{ $about }} @endif"><a href="{{ route('minstrelAbout') }}">About</a>
                   </li>
                   <li class="@if(isset($gallery)) {{ $gallery }} @endif"><a href="#">Gallery</a>
                   </li>

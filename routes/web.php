@@ -19,6 +19,7 @@ Route::get('/donate', ['as'=>'minstrelDonate', 'uses'=>'MinstrelProjectControlle
 Route::get('/contact', ['as'=>'minstrelContact', 'uses'=>'MinstrelProjectController@contact']);
 Route::get('/teller', ['as'=>'minstrelTeller', 'uses'=>'MinstrelProjectController@teller']);
 Route::post('/submitTeller', ['as'=>'minstrelSubmitTeller', 'uses'=>'MinstrelProjectController@submitTeller']);
+Route::get('/about us', ['as'=>'minstrelAbout', 'uses'=>'MinstrelProjectController@about']);
 
 Route::group(['middlemare'=>'isAdmin'], function() {
   Route::get('/dashboard', ['as'=>'minstrelDashboard', 'uses'=>'MinstrelDashboardController@index']);

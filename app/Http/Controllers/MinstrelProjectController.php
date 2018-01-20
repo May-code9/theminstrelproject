@@ -37,6 +37,12 @@ class MinstrelProjectController extends Controller
       $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
       return view('pages.contacts', compact('contact', 'cover', 'checkIfAdmin'));
     }
+    public function about() {
+      $about = 'active';
+      $cover = 'About';
+      $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
+      return view('pages.about', compact('about', 'cover', 'checkIfAdmin'));
+    }
     public function teller() {
       if(Auth::user()) {
         $checkSerialNumber = Serial::where('user_id', Auth::user()->id)->count();
