@@ -6,7 +6,7 @@
   <div class="shell section-60">
     <div class="range range-lg-justify range-xs-center">
       <div class="cell-md-3 cell-lg-2">
-        <!--Footer brand--><a href="index.html" class="reveal-inline-block"><img width="163" height="163" src="images/logo-170x172.png" alt="">
+        <!--Footer brand--><a href="{{ route('minstrelHome') }}" class="reveal-inline-block"><img width="163" height="163" src="images/logo-170x172.png" alt="">
         <div>
           <h6 class="barnd-name text-bold offset-top-25 text-colour">{{ config('app.name') }}</h6>
         </div>
@@ -81,7 +81,7 @@
               <div class="unit unit-horizontal unit-middle unit-spacing-xs">
                 <div class="unit-left"><span class="icon fa fa-arrow-right text-middle icon-xs text-madison"></span></div>
                 <div class="unit-body">
-                  <a href="#" class="text-dark">About</a>
+                  <a href="{{ route('minstrelAbout') }}" class="text-dark">About</a>
                 </div>
               </div>
             </li>
@@ -115,8 +115,15 @@
       </div>
     </div>
     <div class="bg-madison context-dark">
-      <div class="shell text-md-left section-15">
-        <p>© <span id="copyright-year">2018</span> All Rights Reserved Terms of Use and <a href="#">Privacy Policy</a></p>
+      <div class="shell section-15">
+        <div class="range">
+          <div class="cell-sm-6 text-md-left">
+            <p>© <span id="copyright-year">2018</span> All Rights Reserved Terms of Use and <a href="#">Privacy Policy</a></p>
+          </div>
+          <div class="cell-sm-6 text-md-right">
+            <p>Designed by <a href="callto:08063766804">MA Code9</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </footer>

@@ -70,15 +70,19 @@ class MinstrelProjectController extends Controller
     public function submitTeller(Request $request) {
       $checkForSerialNumber = Serial::where('user_id', Auth::user()->id)->count();
       if($checkForSerialNumber == 0) {
-        $teller = new Serial;
-        $teller->user_id = Auth::user()->id;
-        $teller->teller_no = $request->input('teller_no');
-        $teller->save();
-
         $confirmation = new Confirmation;
         $confirmation->user_id = Auth::user()->id;
         $confirmation->confirmed = 0;
         $confirmation->save();
+
+        $getConfirmation_id = Confirmation::where('user_id', Auth::user()->id)->get()->last();
+
+        $teller = new Serial;
+        $teller->user_id = Auth::user()->id;
+        $teller->teller_no = $request->input('teller_no');
+        $teller->confirmation_id = $getConfirmation_id->id;
+        $teller->save();
+
 
         return redirect('/')->with("alert", "<script>alert('Teller Number Inserted, Registration will be Completed in the next 24 hours, once teller number has been verified')</script>");
       } else {

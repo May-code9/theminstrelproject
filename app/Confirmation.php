@@ -9,7 +9,6 @@ class Confirmation extends Model
     protected $fillable = [
       'user_id', 'confirmed'
     ];
-
     public function getConfirmedAttribute($value) {
       if($value == 0) {
         $display = "Not Active";
@@ -18,12 +17,11 @@ class Confirmation extends Model
       }
       return $display;
     }
-    public function getHandicapAttribute($value) {
-      if($value) {
-        $display = $value;
+    public function setConfirmedAttribute($value) {
+      if($value == "Deactivate") {
+        $this->attributes['confirmed'] = 0;
       } else {
-        $display = "None";
+        $this->attributes['confirmed'] = 1;
       }
-      return $display;
     }
 }

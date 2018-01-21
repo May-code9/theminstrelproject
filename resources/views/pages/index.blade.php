@@ -87,7 +87,7 @@
       <div class="swiper-pagination"></div>
     </div>
   </section>
-  <!-- A Few Words About the University-->
+
   <section class="section-70 section-md-50 bg-index-body">
     <div class="shell">
       <div class="range text-sm-left range-sm-justify" style="margin-bottom: 45px;">
@@ -395,17 +395,17 @@
                 </div>
               </div>
             </div>
-            <!-- <div>
+            <div>
               <div class="quote-classic-boxed text-left">
                 <div class="quote-body">
-                  <q> I want to take this opportunity to thank you and your staff for all you have done for my daughter. I am in awe at how much Lauren has grown both emotionally and intellectually since last year.</q>
+                  <q> I want to take this opportunity to thank the staff for all your relentless efforts. I am in awe at how much we have achieved in such a short period, we do more.</q>
                   <div class="offset-top-30 text-left">
                     <div class="unit unit-horizontal">
-                      <div class="unit-left"><img src="images/users/user-steven-alvarez-230x230.jpg" width="80" height="80" alt="" class="img-responsive reveal-inline-block img-circle"></div>
+                      <div class="unit-left"><img src="images/users/afy-douglas-230x230.png" width="80" height="80" alt="" class="img-responsive reveal-inline-block img-circle"></div>
                       <div class="unit-body">
-                        <cite class="font-accent">Steven Alvarez</cite>
+                        <cite class="font-accent">Afy Douglas</cite>
                         <div class="offset-top-5">
-                          <p class="text-dark text-italic">Taxi driver</p>
+                          <p class="text-dark text-italic">Project Manager</p>
                         </div>
                       </div>
                     </div>
@@ -413,7 +413,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <!-- <div>
               <div class="quote-classic-boxed text-left">
                 <div class="quote-body">
                   <q>Words truly can't express how grateful I am that a preschool like this exists. I thought that a place like this was a mythical unicorn that parents searched for, but never found.</q>

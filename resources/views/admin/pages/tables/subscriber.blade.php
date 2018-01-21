@@ -27,7 +27,7 @@
                   <th>School Address</th>
                   <th>State</th>
                   <th>Disability</th>
-                  <th>Email</th>
+                  <th>Teller No</th>
                   <th>Status</th>
                 </tr>
               </thead>
@@ -38,12 +38,12 @@
                   <td>{{ $getListOfUser->first_name }} {{ $getListOfUser->last_name }}</td>
                   <td>{{ $getListOfUser->age }}</td>
                   <td>{{ $getListOfUser->gender }}</td>
-                  <td>{{ $getListOfUser->school }}</td>
+                  <td>{{ $getListOfUser->address }}</td>
                   <td>{{ $getListOfUser->state }}</td>
                   <td>{{ $getListOfUser->handicap }}</td>
-                  <td>{{ $getListOfUser->email }}</td>
+                  <td>{{ $getListOfUser->teller_no }}</td>
                   <td>{{ $getListOfUser->confirmed }}</td>
-                  <td class="center"><a href="#" id="edit" class="btn btn-sm btn-primary mr-2">Edit</a></td>
+                  <td class="center"><a href="/subscriber/{{$getListOfUser->id}}/edit" id="edit" class="btn btn-sm btn-primary mr-2">Edit Status</a></td>
                 </tr>
                 @endforeach
               </tbody>
@@ -56,7 +56,7 @@
                   <th>School Address</th>
                   <th>State</th>
                   <th>Disability</th>
-                  <th>Email</th>
+                  <th>Teller No</th>
                   <th>Status</th>
                 </tr>
               </tfoot>

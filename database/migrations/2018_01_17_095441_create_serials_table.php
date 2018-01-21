@@ -16,6 +16,7 @@ class CreateSerialsTable extends Migration
         Schema::create('serials', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
+            $table->integer('confirmation_id');
             $table->string('teller_no');
             $table->timestamps();
         });
