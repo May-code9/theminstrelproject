@@ -48,7 +48,7 @@
                     <h2 class="text-bold">A Perfect Developing Center for Your Kids.</h2>
                   </div>
                   <div data-caption-animate="fadeInUp" data-caption-delay="150" data-caption-duration="1700" class="offset-top-20 offset-xs-top-40 offset-xl-top-60">
-                    <h4 class="text-regular font-default">The success of a child can starts with good exposure. At {{ config('app.name') }}, your children will have the right exposure that will be especially useful for them.</h4>
+                    <h4 class="text-regular font-default">The success of a child can start with good exposure. At {{ config('app.name') }}, your children will have the right exposure that will be especially useful for them.</h4>
                   </div>
                   <div data-caption-animate="fadeInUp" data-caption-delay="400" data-caption-duration="1700" class="offset-top-20 offset-xl-top-40">
                     @guest

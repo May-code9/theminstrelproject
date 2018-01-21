@@ -29,10 +29,10 @@
     <li class="title-nav">MENU</li>
     <li class="nav-item"><a  href="#" class="nav-link">DashBoard</a></li>
     <li class="nav-item"><a  href="#" class="nav-link">Customer Profile</a></li>
-    <li class="nav-item"> <a href="javascript:void(0)" class="nav-link menudropdown ">Subscribers<i class="fa fa-angle-down "></i></a>
+    <li class="nav-item"> <a href="javascript:void(0)" class="nav-link menudropdown ">Teller<i class="fa fa-angle-down "></i></a>
       <ul class="nav flex-column nav-second-level">
         <li class="nav-item"><a class="nav-link" href="#">Edit Subscriber</a> </li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('subscriber.index') }}">List Basic Details</a> </li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('teller.index') }}">List Basic Details</a> </li>
       </ul>
     </li>
     <!-- <li class="nav-item"> <a href="javascript:void(0)" class="nav-link menudropdown ">Leagues<i class="fa fa-angle-down "></i></a>

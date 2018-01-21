@@ -9,7 +9,7 @@ use App\Admin;
 use App\Serial;
 use App\Confirmation;
 
-class MinstrelSubscriberController extends Controller
+class MinstrelTellerController extends Controller
 {
 
     public function index()
@@ -23,7 +23,7 @@ class MinstrelSubscriberController extends Controller
         'users.address', 'users.state', 'users.handicap', 'serials.teller_no', 'confirmations.confirmed')
         ->paginate(15);
 
-        return view("admin.pages.tables.subscriber", compact('checkAdminRole', 'getListOfUsers'));
+        return view("admin.pages.tables.teller", compact('checkAdminRole', 'getListOfUsers'));
       } else {
         return redirect('/');
       }
@@ -55,7 +55,7 @@ class MinstrelSubscriberController extends Controller
         $adminRole = Admin::where('user_id', Auth::user()->id)->first();
         $checkAdminRole = $adminRole->role;
 
-        return view('admin.pages.crud.editSubscriber', compact('activateUser', 'checkSerial', 'checkConfirm', 'checkAdminRole'));
+        return view('admin.pages.crud.editTeller', compact('activateUser', 'checkSerial', 'checkConfirm', 'checkAdminRole'));
     }
 
     public function update(Request $request, $id)
@@ -67,7 +67,7 @@ class MinstrelSubscriberController extends Controller
       $checkSerial->update($request->all());
       $checkConfirm->update($request->all());
 
-      return redirect('/subscriber')->with('success_status', 'User Edited');
+      return redirect('/teller')->with('success_status', 'User Edited');
     }
 
     public function destroy($id)

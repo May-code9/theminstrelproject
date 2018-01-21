@@ -14,7 +14,7 @@
       <div class="col-sm-12 col-md-16">
         <div class="card">
           <div class="card-header">
-            <h5 class="card-title">All Subscriber <small>Table</small> | <small>Total Subscribers: </small>{{ countConfirmation() }} </h5>
+            <h5 class="card-title">All Teller <small>Table</small> | <small>Total Number of Tellers: </small>{{ countConfirmation() }} </h5>
           </div>
           <div class="card-body">
             <table class="table " id="dataTables-example">
@@ -43,7 +43,7 @@
                   <td>{{ $getListOfUser->handicap }}</td>
                   <td>{{ $getListOfUser->teller_no }}</td>
                   <td>{{ $getListOfUser->confirmed }}</td>
-                  <td class="center"><a href="/subscriber/{{$getListOfUser->id}}/edit" id="edit" class="btn btn-sm btn-primary mr-2">Edit Status</a></td>
+                  <td class="center"><a href="/teller/{{$getListOfUser->id}}/edit" id="edit" class="btn btn-sm btn-primary mr-2">Edit Status</a></td>
                 </tr>
                 @endforeach
               </tbody>

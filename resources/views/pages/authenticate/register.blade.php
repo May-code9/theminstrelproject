@@ -67,7 +67,7 @@ Register | {{ config('app.name') }}
                         <div class="form-group{{ $errors->has('age') ? ' has-error' : '' }}">
                           <label for="age" class="form-label form-label-outside">Age:</label>
                           <select class="form-control" id="age" name="age" required>
-                            <option value="">-- Between 12 &amp; 22 --</option>
+                            <option value="">-- Between 10 &amp; 22 --</option>
                             @for($i = 0; $i < count(getAge()); $i++)
                             <option value="{{getAge()[$i]}}">{{getAge()[$i]}}</option>
                             @endfor

@@ -26,7 +26,7 @@
     <!-- Edit Scores -->
     <div class="row">
       <div class="col-sm-16">
-        <form class="form-horizontal" role="form" method="POST" action="/subscriber/{{$checkSerial->id}}">
+        <form class="form-horizontal" role="form" method="POST" action="/teller/{{$checkSerial->id}}">
           {{ method_field('PUT') }}
           {{ csrf_field() }}
           <div class="card">
