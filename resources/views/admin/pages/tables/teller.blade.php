@@ -11,7 +11,7 @@
 
     </div>
     <div class="row">
-      <div class="col-sm-12 col-md-16">
+      <div class="col-sm-16 col-md-16">
         <div class="card">
           <div class="card-header">
             <h5 class="card-title">All Teller <small>Table</small> | <small>Total Number of Tellers: </small>{{ countConfirmation() }} </h5>

@@ -39969,10 +39969,10 @@ a.pswp__share--download:hover {
   }
   .responsive-tabs[data-type="vertical"] .resp-tabs-list {
     text-align: left;
-    -webkit-flex-basis: 29%;
-    -ms-flex-preferred-size: 29%;
-    flex-basis: 29%;
-    max-width: 29%;
+    -webkit-flex-basis: 20%;
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+    max-width: 20%;
   }
   .responsive-tabs[data-type="vertical"] .resp-tabs-list li {
     display: block;
@@ -39981,10 +39981,10 @@ a.pswp__share--download:hover {
     margin-left: 0;
   }
   .responsive-tabs[data-type="vertical"] .resp-tabs-container {
-    -webkit-flex-basis: 71%;
-    -ms-flex-preferred-size: 71%;
-    flex-basis: 71%;
-    max-width: 71%;
+    -webkit-flex-basis: 80%;
+    -ms-flex-preferred-size: 80%;
+    flex-basis: 80%;
+    max-width: 80%;
   }
   .responsive-tabs.tabs-lg-collapsed {
     border-bottom: none;

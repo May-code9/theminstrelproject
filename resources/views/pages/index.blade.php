@@ -375,7 +375,7 @@
     <div data-on="false" data-md-on="true" class="rd-parallax">
       <div data-speed="0.2" data-type="media" data-url="images/parallax-01.jpg" class="rd-parallax-layer"></div>
       <div data-speed="0.05" data-type="html" class="rd-parallax-layer">
-        <div class="shell section-70 section-xl-100 section-xl-bottom-114">
+        <div class="shell section-20 section-xl-100 section-xl-bottom-114">
           <div data-items="1" data-sm-items="2" data-nav="true" data-dots="true" data-margin="30" data-loop="true" data-nav-class="[&quot;owl-prev fa-angle-left&quot;, &quot;owl-next fa-angle-right&quot;]" class="owl-carousel owl-carousel-default veil-xl-owl-dots veil-owl-nav reveal-xl-owl-nav">
             <div>
               <div class="quote-classic-boxed text-left">
@@ -512,24 +512,25 @@
     <div data-items="1" data-xs-items="2" data-sm-items="3" data-lg-items="4" data-xl-items="6" data-nav="false" data-dots="false" data-mouse-drag="true" data-photo-swipe-gallery="" data-flickr-tags="tm-61183" data-stage-padding="0" data-xl-stage-padding="0" class="owl-carousel flickr"><a data-photo-swipe-item="" href="" data-image_c="href" data-size="320x320" data-type="flickr-item" class="thumbnail-default thumbnail-flickr"><img width="320" height="320" data-title="alt" src="images/_blank.png" alt="" data-image_z="src"><span class="icon fa-search-plus"></span></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="320x320" data-type="flickr-item" class="thumbnail-default thumbnail-flickr"><img width="320" height="320" data-title="alt" src="images/_blank.png" alt="" data-image_z="src"><span class="icon fa-search-plus"></span></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="320x320" data-type="flickr-item" class="thumbnail-default thumbnail-flickr"><img width="320" height="320" data-title="alt" src="images/_blank.png" alt="" data-image_z="src"><span class="icon fa-search-plus"></span></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="320x320" data-type="flickr-item" class="thumbnail-default thumbnail-flickr"><img width="320" height="320" data-title="alt" src="images/_blank.png" alt="" data-image_z="src"><span class="icon fa-search-plus"></span></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="320x320" data-type="flickr-item" class="thumbnail-default thumbnail-flickr"><img width="320" height="320" data-title="alt" src="images/_blank.png" alt="" data-image_z="src"><span class="icon fa-search-plus"></span></a><a data-photo-swipe-item="" href="" data-image_c="href" data-size="320x320" data-type="flickr-item" class="thumbnail-default thumbnail-flickr"><img width="320" height="320" data-title="alt" src="images/_blank.png" alt="" data-image_z="src"><span class="icon fa-search-plus"></span></a></div>
   </section> -->
   <!-- Contact info-->
+  <br>
   <section class="section-60">
     <div class="shell">
       <div class="range range-xs-center features-list">
         <div class="cell-sm-4">
-          <div class="unit unit-vertical unit-responsive-md section-45">
+          <div class="unit unit-vertical unit-responsive-md section-20">
             <div class="unit-left"><span class="icon icon-contact-sm text-madison fa-phone"></span></div>
             <div class="unit-body"><a href="callto:#" class="h6 text-regular text-colour">08119055551</a></div>
             <div class="unit-body"><a href="callto:#" class="h6 text-regular text-colour">07066803471</a></div>
           </div>
         </div>
         <div class="cell-sm-4">
-          <div class="unit unit-vertical unit-responsive-md section-45">
+          <div class="unit unit-vertical unit-responsive-md section-15">
             <div class="unit-left"><span class="icon icon-contact-sm text-madison fa-map-marker"></span></div>
             <div class="unit-body"><a href="#" class="h6 text-regular text-colour">Port Harcourt <br class="visible-lg-inline"> Rivers State</a></div>
           </div>
         </div>
         <div class="cell-sm-4">
-          <div class="unit unit-vertical unit-responsive-md section-45">
+          <div class="unit unit-vertical unit-responsive-md section-15">
             <div class="unit-left"><span class="icon icon-contact-sm text-madison fa-envelope-o"></span></div>
             <div class="unit-body"><a href="mailto:#" class="h6 text-regular text-colour">contact@theminstrelproject.org</a></div>
             <div class="unit-body"><a href="mailto:#" class="h6 text-regular text-colour">info@theminstrelproject.org</a></div>

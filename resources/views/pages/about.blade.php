@@ -29,7 +29,7 @@ About Us | {{ config('app.name') }}
             <p style="font-size: 17px; text-align: justify">{{ config('app.name') }} is an exclusive initiative of a non-government agency known as NOAH’s 1:1.601 TEENAGE CLUB, whose aim amongst other is to scout, develop and mentor young talents.</p>
             <p style="font-size: 17px; text-align: justify">{{ config('app.name') }} is executed in collaboration with THE REDEEMED CHRISTIAN CHURCH OF GOD REGION 5 JUNIOR CHURCH, and other sponsors/partners.</p>
           </div>
-          <p style="font-size: 17px; text-align: justify">She is a talent hunt reality tv show property crafted to scout, develop, mentor and reward young talents in the gospel music industry. The talent hunt reality tv show first edition will run for three months, on selected national television channels, the participants must be between the age of 12 -22 years.</p>
+          <p style="font-size: 17px; text-align: justify">She is a talent hunt reality tv show property crafted to scout, develop, mentor and reward young talents in the gospel music industry. The talent hunt reality tv show first edition will run for three months, on selected national television channels, the participants must be between the age of 10 to 22 years.</p>
           <p style="font-size: 17px; text-align: justify">This Project is to cover Nigeria with emphasis on South South and South East State After the first phase of audition the successful participants will be admitted into our music Academy known as the MINSTREL HOUSE, where they will be trained by the best team in gospel music.</p>
           <hr>
           <h3 class="text-bold text-colour">Rewards</h3>
@@ -70,14 +70,58 @@ About Us | {{ config('app.name') }}
       </div>
     </div>
   </section>
-
+  <hr>
+  <section class="offset-top-30">
+    <div class="shell">
+      <div class="range range-xs-center">
+        <div class="cell-xs-10 cell-lg-12">
+          <!-- Responsive-tabs-->
+          <h4 class="text-bold text-colour">How to Register</h4>
+          <div data-type="vertical" class="responsive-tabs responsive-tabs-classic vertical">
+            <ul data-group="tabs-group-default" class="resp-tabs-list tabs-1 text-center tabs-group-default">
+              <li>Registration Fee</li>
+              <li>Account Details</li>
+            </ul>
+            <div data-group="tabs-group-default" class="resp-tabs-container text-sm-left tabs-group-default">
+              <div>
+                <div class="inset-lg-left-30">
+                  <p>To Start Registration, you <a href="{{ route('register') }}">sign up</a>. You will be required to pay 1000, (click Account Details Tab for more Information), then text your teller number to <strong>08119055551 or 07066803471</strong>. Finally, Input your bank Teller number</p>
+                </div>
+              </div>
+              <div>
+                <div class="inset-lg-left-30">
+                  <table class="table table-custom table-fixed table-hover-rows table-product">
+                    <tbody>
+                      <tr>
+                        <td>Bank Name</td>
+                        <td>FCMB</td>
+                      </tr>
+                      <tr>
+                        <td>Account Name</td>
+                        <td>Noah's 1.1.601 Teenage Club</td>
+                      </tr>
+                      <tr>
+                        <td>Account Number</td>
+                        <td>2857203011</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
   <!-- Images-->
   <section class="bg-index-body">
     <div class="shell-wide">
       <div class="range">
         <div class="cell-sm-4"><img src="images/minstrelProject3.png" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
         <div class="cell-sm-4"><img src="images/minstrelProject.png" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
-        <div class="cell-sm-4"><img src="images/minstrelProject2.jpg" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
+        <div class="cell-sm-4"><img src="images/minstrelProject2.png" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
       </div>
     </div>
   </section>
