@@ -24,10 +24,4 @@
   <!-- May CSS -->
   <link rel="stylesheet" href="{{asset('css/may.css')}}" type="text/css">
 
-  @if(Route::currentRouteName() == 'leagues.create' || Route::currentRouteName() == 'games.create')
-  <!-- date picker CSS -->
-  <link rel="stylesheet" href="{{asset('vendor/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.css')}}"   type="text/css">
-
-  @endif
-
 </head>

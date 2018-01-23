@@ -27,14 +27,16 @@
   <br>
   <ul class="nav flex-column in" id="side-menu">
     <li class="title-nav">MENU</li>
-    <li class="nav-item"><a  href="#" class="nav-link">DashBoard</a></li>
-    <li class="nav-item"><a  href="#" class="nav-link">Customer Profile</a></li>
-    <li class="nav-item"> <a href="javascript:void(0)" class="nav-link menudropdown ">Teller<i class="fa fa-angle-down "></i></a>
+    <li class="nav-item"><a  href="{{ route('minstrelDashboard') }}" class="nav-link">DashBoard</a></li>
+    <li class="nav-item"> <a href="javascript:void(0)" class="nav-link menudropdown ">Subscribers<i class="fa fa-angle-down "></i></a>
       <ul class="nav flex-column nav-second-level">
-        <li class="nav-item"><a class="nav-link" href="#">Edit Subscriber</a> </li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('teller.index') }}">List Basic Details</a> </li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('addressinfo.index') }}">Address Information</a> </li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('contactinfo.index') }}">Contact Information</a> </li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('guardianinfo.index') }}">Guardian Information</a> </li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('personalinfo.index') }}">Personal Information</a> </li>
       </ul>
     </li>
+    <li class="nav-item"><a  href="{{ route('teller.index') }}" class="nav-link">Teller</a></li>
     <!-- <li class="nav-item"> <a href="javascript:void(0)" class="nav-link menudropdown ">Leagues<i class="fa fa-angle-down "></i></a>
       <ul class="nav flex-column nav-second-level">
         <li class="nav-item"><a class="nav-link" href="#">Add Leagues</a> </li>
@@ -67,25 +69,12 @@
     </li>
     <li class="title-nav">Super Admin</li>
     <li class="nav-item"><a  href="#" class="nav-link">Admin</a></li>
-    <li class="nav-item"><a  href="#" class="nav-link">Product Cost</a></li>
+    <!-- <li class="nav-item"><a  href="#" class="nav-link">Product Cost</a></li> -->
     @endif
   </ul>
   <hr>
 
   <hr>
-  <ul class="nav flex-column in">
-    <li class="title-nav">Next Meeting</li>
-    <li class="nav-item ">
-      <div class="nav-link">
-        <h5>12:30 PM, Today <span class="fa fa-bell-o pull-right"></span></h5>
-        <span class="meeting-subject">Agenda: Team mnufacturing review meeting. Board Compulsory</span>
-        <div class="">
-          <button class="btn btn-outline-success btn-round mr-sm-2">Snooz</button>
-          <button class="btn btn-outline-danger btn-round ">Dismiss</button>
-        </div>
-      </div>
-    </li>
-  </ul>
-  <br>
+
   <br>
 </div>

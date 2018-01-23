@@ -6,7 +6,8 @@ use App\Confirmation;
 use App\User;
 
 function countUser() {
-
+  $getUsers = User::count();
+  return $getUsers;
 }
 
 function countSerial() {

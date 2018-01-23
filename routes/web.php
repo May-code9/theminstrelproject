@@ -21,8 +21,16 @@ Route::get('/fill teller', ['as'=>'minstrelTeller', 'uses'=>'MinstrelProjectCont
 Route::post('/submitTeller', ['as'=>'minstrelSubmitTeller', 'uses'=>'MinstrelProjectController@submitTeller']);
 Route::get('/about us', ['as'=>'minstrelAbout', 'uses'=>'MinstrelProjectController@about']);
 
-Route::group(['middlemare'=>'isAdmin'], function() {
+Route::group(['middleware'=>'isAdmin'], function() {
   Route::get('/dashboard', ['as'=>'minstrelDashboard', 'uses'=>'MinstrelDashboardController@index']);
 
   Route::resource('teller', 'MinstrelTellerController');
+
+  Route::resource('addressinfo', 'MinstrelAddressInfo');
+
+  Route::resource('contactinfo', 'MinstrelContactInfo');
+
+  Route::resource('guardianinfo', 'MinstrelGuardianInfo');
+
+  Route::resource('personalinfo', 'MinstrelPersonalInfo');
 });

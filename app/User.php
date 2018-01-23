@@ -34,4 +34,12 @@ class User extends Authenticatable
     public function setLastNameAttribute($value) {
       $this->attributes['last_name'] = ucfirst($value);
     }
+    public function getHandicapAttribute($value) {
+      if($value) {
+        $display = $value;
+      } else {
+        $display = "None";
+      }
+      return $display;
+    }
 }
