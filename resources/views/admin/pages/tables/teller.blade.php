@@ -22,13 +22,14 @@
                 <tr>
                   <th>Id </th>
                   <th>Subscriber</th>
-                  <th>Age</th>
-                  <th>Gender</th>
-                  <th>School Address</th>
-                  <th>State</th>
-                  <th>Disability</th>
                   <th>Teller No</th>
                   <th>Status</th>
+                  <th>Age</th>
+                  <th>Gender</th>
+                  <th>School</th>
+                  <th>State</th>
+                  <th>Disability</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
@@ -36,13 +37,13 @@
                 <tr class="">
                   <td>{{ $getListOfUser->id }}</td>
                   <td>{{ $getListOfUser->first_name }} {{ $getListOfUser->last_name }}</td>
-                  <td>{{ $getListOfUser->age }}</td>
-                  <td>{{ $getListOfUser->gender }}</td>
-                  <td>{{ $getListOfUser->address }}</td>
-                  <td>{{ $getListOfUser->state }}</td>
-                  <td>{{ $getListOfUser->handicap }}</td>
                   <td>{{ $getListOfUser->teller_no }}</td>
                   <td>{{ $getListOfUser->confirmed }}</td>
+                  <td>{{ $getListOfUser->age }}</td>
+                  <td>{{ $getListOfUser->gender }}</td>
+                  <td>{{ $getListOfUser->school }}</td>
+                  <td>{{ $getListOfUser->state }}</td>
+                  <td>{{ $getListOfUser->handicap }}</td>
                   <td class="center"><a href="/teller/{{$getListOfUser->id}}/edit" id="edit" class="btn btn-sm btn-primary mr-2">Edit Status</a></td>
                 </tr>
                 @endforeach
@@ -51,13 +52,14 @@
                 <tr>
                   <th>Id </th>
                   <th>Subscriber</th>
-                  <th>Age</th>
-                  <th>Gender</th>
-                  <th>School Address</th>
-                  <th>State</th>
-                  <th>Disability</th>
                   <th>Teller No</th>
                   <th>Status</th>
+                  <th>Age</th>
+                  <th>Gender</th>
+                  <th>School</th>
+                  <th>State</th>
+                  <th>Disability</th>
+                  <th></th>
                 </tr>
               </tfoot>
             </table>

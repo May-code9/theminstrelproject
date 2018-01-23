@@ -98,7 +98,7 @@ Register | {{ config('app.name') }}
                     <div class="range offset-top-10">
                       <div class="cell-sm-6">
                         <div class="form-group offset-top-15{{ $errors->has('city') ? ' has-error' : '' }}">
-                          <label for="city" class="form-label form-label-outside">City:</label>
+                          <label for="city" class="form-label form-label-outside">Your City:</label>
                           <select class="form-control" id="city" name="city" required>
                             <option value="">-- Select --</option>
                             @for($i = 0; $i < count(getCities()); $i++)
@@ -109,7 +109,7 @@ Register | {{ config('app.name') }}
                       </div>
                       <div class="cell-sm-6 offset-top-17 offset-sm-top-0">
                         <div class="form-group offset-top-15{{ $errors->has('state') ? ' has-error' : '' }}">
-                          <label for="state" class="form-label form-label-outside">State:</label>
+                          <label for="state" class="form-label form-label-outside">Your State:</label>
                           <select class="form-control" id="state" name="state" required>
                             <option value="">-- Select --</option>
                             @for($i = 0; $i < count(getStates()); $i++)
@@ -120,13 +120,24 @@ Register | {{ config('app.name') }}
                       </div>
                     </div>
                     <div class="range offset-top-10">
-                      <div class="cell-sm-12">
+                      <div class="cell-sm-6">
                         <div class="form-group offset-top-15{{ $errors->has('school') ? ' has-error' : '' }}">
-                          <label for="school" class="form-label form-label-outside">School Address:</label>
+                          <label for="school" class="form-label form-label-outside">School Name:</label>
                           <input id="school" type="text" name="school" class="form-control bg-white" required>
                           @if ($errors->has('school'))
                           <span class="help-block">
                             <strong>{{ $errors->first('school') }}</strong>
+                          </span>
+                          @endif
+                        </div>
+                      </div>
+                      <div class="cell-sm-6 offset-top-17 offset-sm-top-0">
+                        <div class="form-group offset-top-15{{ $errors->has('school_address') ? ' has-error' : '' }}">
+                          <label for="school_address" class="form-label form-label-outside">School Address:</label>
+                          <input id="school_address" type="text" name="school_address" class="form-control bg-white" required>
+                          @if ($errors->has('school_address'))
+                          <span class="help-block">
+                            <strong>{{ $errors->first('school_address') }}</strong>
                           </span>
                           @endif
                         </div>

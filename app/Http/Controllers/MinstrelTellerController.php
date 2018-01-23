@@ -20,7 +20,7 @@ class MinstrelTellerController extends Controller
         $getListOfUsers = Serial::join('confirmations', 'confirmations.id', '=', 'serials.confirmation_id')
         ->join('users', 'users.id', '=', 'serials.user_id')
         ->select('serials.id', 'users.first_name', 'users.last_name', 'users.age', 'users.gender',
-        'users.address', 'users.state', 'users.handicap', 'serials.teller_no', 'confirmations.confirmed')
+        'users.school', 'users.state', 'users.handicap', 'serials.teller_no', 'confirmations.confirmed')
         ->paginate(15);
 
         return view("admin.pages.tables.teller", compact('checkAdminRole', 'getListOfUsers'));
