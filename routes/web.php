@@ -38,4 +38,10 @@ Route::group(['middleware'=>'isAdmin'], function() {
   Route::get('searchaddress{page?}', ['as'=>'addressinfo.search', 'uses'=>'AdminSearchController@searchAddressInfo']);
 
   Route::get('searchcontact{page?}', ['as'=>'contactinfo.search', 'uses'=>'AdminSearchController@searchContactInfo']);
+
+  Route::get('searchguardian{page?}', ['as'=>'guardianinfo.search', 'uses'=>'AdminSearchController@searchGuardianInfo']);
+
+  Route::get('searchpersonal{page?}', ['as'=>'personalinfo.search', 'uses'=>'AdminSearchController@searchPersonalInfo']);
+
+  Route::get('searchteller_number{page?}', ['as'=>'tellerno.search', 'uses'=>'AdminSearchController@searchTellerNo']);
 });

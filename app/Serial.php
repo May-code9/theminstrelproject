@@ -18,7 +18,7 @@ class Serial extends Model
       }
       return $display;
     }
-    
+
     public function getHandicapAttribute($value) {
       if($value) {
         $display = $value;
