@@ -60,7 +60,7 @@ class AdminSearchController extends Controller
       $adminRole = Admin::where('user_id', Auth::user()->id)->first();
       $checkAdminRole = $adminRole->role;
       $nameSearch = $request->get('name_search');
-      if($nameSearch == "active") {
+      if($nameSearch == "active" || $nameSearch == "Active" || $nameSearch == "ACTIVE") {
         $nameSearch = 1;
         $users = Serial::join('confirmations', 'confirmations.id', '=', 'serials.confirmation_id')
         ->join('users', 'users.id', '=', 'serials.user_id')
@@ -68,7 +68,7 @@ class AdminSearchController extends Controller
         'users.school', 'users.state', 'users.handicap', 'serials.teller_no', 'confirmations.confirmed')
         ->where('confirmed', 'LIKE', '%'.$nameSearch.'%')
         ->get();
-      } elseif($nameSearch == "not active") {
+      } elseif($nameSearch == "not active" || $nameSearch == "Not Active" || $nameSearch == "NOT ACTIVE") {
         $nameSearch = 0;
         $users = Serial::join('confirmations', 'confirmations.id', '=', 'serials.confirmation_id')
         ->join('users', 'users.id', '=', 'serials.user_id')

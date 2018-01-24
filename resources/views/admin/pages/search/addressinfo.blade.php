@@ -23,6 +23,39 @@
     @endif
 
     <div class="row">
+      <div class="col-sm-16">
+        <form class="form-horizontal" method="GET" action="{{ route('addressinfo.search') }}" role="form">
+          {{ csrf_field() }}
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-title">Search Address<small> by User Name, City, State</small></h5>
+          </div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-8 ">
+                <div class="row ">
+                  <div class="col-md-16">
+                    <div class="form-group">
+                      <label>Search Here</label>
+                      <div class="input-group">
+                      <input id="name_search" name="name_search" type="text" class="form-control datepicker" placeholder="Search By User Name, City, State">
+                    </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button type="submit" class="btn btn-sm btn-primary mr-2">Search</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
       <div class="col-sm-16 col-md-16">
         <div class="card">
           <div class="card-header">

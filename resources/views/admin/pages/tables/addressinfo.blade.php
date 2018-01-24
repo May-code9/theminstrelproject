@@ -28,7 +28,7 @@
           {{ csrf_field() }}
         <div class="card">
           <div class="card-header">
-            <h5 class="card-title">Search Address<small> by User Name</small></h5>
+            <h5 class="card-title">Search Address<small> by User Name, City, State</small></h5>
           </div>
           <div class="card-body">
             <div class="row justify-content-center">
@@ -36,9 +36,9 @@
                 <div class="row ">
                   <div class="col-md-16">
                     <div class="form-group">
-                      <label>Subscriber's Name</label>
+                      <label>Search Here</label>
                       <div class="input-group">
-                      <input id="name_search" name="name_search" type="text" class="form-control datepicker" placeholder="Search By First Name or Last Name">
+                      <input id="name_search" name="name_search" type="text" class="form-control datepicker" placeholder="Search By User Name, City, State">
                     </div>
                     </div>
                   </div>
