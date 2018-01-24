@@ -10,15 +10,22 @@ function countUser() {
   return $getUsers;
 }
 
-function countSerial() {
-
+function countTeller() {
+  $counter = Serial::count();
+  return $counter;
 }
 
 function countConfirmation() {
-  $getListOfUsersWithConfirmStatus = Confirmation::join('users', 'users.id', '=', 'confirmations.user_id')->count();
+  $getListOfUsersWithConfirmStatus = Confirmation::where('confirmed', 1)->count();
   return $getListOfUsersWithConfirmStatus;
 }
 
-function countAdmin() {
+function countSuperAdmin() {
+  $counter = Admin::where('role', 4)->count();
+  return $counter;
+}
 
+function countAdmin() {
+  $counter = Admin::where('role', 3)->count();
+  return $counter;
 }

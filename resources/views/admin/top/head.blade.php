@@ -19,7 +19,7 @@
   <!--<link href="{{asset('vendor/jquery-jvectormap/jquery-jvectormap-2.0.3.css')}}" rel="stylesheet">-->
 
   <!-- Adminux CSS -->
-  <link rel="stylesheet" href="{{asset('css/dark_blue_adminux.css')}}" type="text/css">
+  <link rel="stylesheet" href="{{asset('css/dark_brown_adminux.css')}}" type="text/css">
 
   <!-- May CSS -->
   <link rel="stylesheet" href="{{asset('css/may.css')}}" type="text/css">

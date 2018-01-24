@@ -14,8 +14,8 @@
         <div class="activity-block success">
           <div class="media">
             <div class="media-body">
-              <h5>$ <span class="spincreament">72548</span></h5>
-              <p>Total Profit</p>
+              <h5> <span class="spincreament">{{ countUser() }}</span></h5>
+              <p>Subscribers</p>
             </div>
             <i class="fa fa-cubes"></i>
           </div>
@@ -36,8 +36,8 @@
         <div class="activity-block danger">
           <div class="media">
             <div class="media-body">
-              <h5><span class="spincreament">....</span></h5>
-              <p> Users</p>
+              <h5><span class="spincreament">{{ countSuperAdmin() }}</span></h5>
+              <p> SuperAdmin</p>
             </div>
             <i class="fa fa-users"></i>
           </div>
@@ -58,7 +58,7 @@
         <div class="activity-block warning">
           <div class="media">
             <div class="media-body">
-              <h5><span class="spincreament">.....</span></h5>
+              <h5><span class="spincreament">{{ countAdmin() }}</span></h5>
               <p> Admin</p>
             </div>
             <i class="fa fa-eye"></i>
@@ -80,8 +80,8 @@
         <div class="activity-block primary">
           <div class="media">
             <div class="media-body">
-              <h5><span class="spincreament">.....</span></h5>
-              <p>Leagues Active</p>
+              <h5><span class="spincreament">{{ countTeller() }}</span></h5>
+              <p>Tellers</p>
             </div>
             <i class="fa fa-dribbble"></i>
           </div>
@@ -104,8 +104,8 @@
         <div class="activity-block">
           <div class="media">
             <div class="media-body">
-              <h5><span class="spincreament">.....</span></h5>
-              <p>Total Leagues</p>
+              <h5><span class="spincreament">{{ countConfirmation() }}</span></h5>
+              <p>Confirmed Subscribers</p>
             </div>
             <i class="fa fa-dribbble"></i>
           </div>
@@ -126,7 +126,7 @@
           <div class="media">
             <div class="media-body">
               <h5><span class="spincreament">....</span><span class="badge badge-danger ml-2 "><i class="fa fa-caret-down"></i></span></h5>
-              <p>Wallets</p>
+              <p>.....</p>
             </div>
             <i class="fa fa-money"></i>
           </div>
@@ -147,7 +147,7 @@
           <div class="media">
             <div class="media-body">
               <h5><span class="spincreament">....</span><span class="badge badge-success ml-2 "><i class="fa fa-caret-up"></i></span></h5>
-              <p>Total Q &amp; A</p>
+              <p>.....</p>
             </div>
             <i class="fa fa-question"></i>
           </div>
@@ -168,7 +168,7 @@
           <div class="media">
             <div class="media-body">
               <h5><span class="spincreament">....</span></h5>
-              <p>Total Bet Set</p>
+              <p>.....</p>
             </div>
             <i class="fa fa-ticket"></i>
           </div>
@@ -185,71 +185,5 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-16 col-lg-8 col-xl-8">
-        <div class="card full-screen-container">
-          <div class="card-header align-items-start justify-content-between flex">
-            <h5 class="card-title  pull-left">Production <small>February 2017</small></h5>
-            <ul class="nav nav-pills card-header-pills pull-right">
-              <li class="nav-item">
-                <button class="btn btn-sm btn-outline-primary btn-round"><i class="fa fa-cloud-download"></i> <span class="text">Export</span></button>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-sm btn-outline-success btn-round"><i class="fa fa-print"></i> <span class="text">Print</span></button>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-sm btn-link btn-round" id="randomizeData"><i class="fa fa-refresh"></i></button>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-sm btn-link btn-round fullscreen-btn"><i class="fa fa-arrows-alt"></i></button>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-sm btn-link btn-round" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-chevron-down"></i></button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Setting</a>
-                  <a class="dropdown-item" href="#">Edit</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Close this</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="card-body">
-            <canvas id="mixedchartjs" ></canvas>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-16 col-lg-8 col-xl-8">
-        <div class="card full-screen-container">
-          <div class="card-header align-items-start justify-content-between flex">
-            <h5 class="card-title  pull-left">Production <small>February 2017</small></h5>
-            <ul class="nav nav-pills card-header-pills pull-right">
-              <li class="nav-item">
-                <button class="btn btn-sm btn-outline-primary btn-round"><i class="fa fa-cloud-download"></i> <span class="text">Export</span></button>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-sm btn-outline-success btn-round"><i class="fa fa-print"></i> <span class="text">Print</span></button>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-sm btn-link btn-round fullscreen-btn"><i class="fa fa-arrows-alt"></i></button>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-sm btn-link btn-round" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-chevron-down"></i></button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#"><i class="fa fa-calendar mr-2"></i>Quarter 1</a>
-                  <a class="dropdown-item" href="#"><i class="fa fa-calendar mr-2"></i>Quarter 2</a>
-                  <a class="dropdown-item" href="#"><i class="fa fa-calendar mr-2"></i>Quarter 3</a>
-                  <a class="dropdown-item" href="#"><i class="fa fa-calendar mr-2"></i>Quarter 4</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="card-body">
-            <div class="worldmap " id="mapwrap" ></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
 
     @endsection

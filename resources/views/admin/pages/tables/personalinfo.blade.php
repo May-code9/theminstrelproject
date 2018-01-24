@@ -8,13 +8,25 @@
         <h3>{{ config('app.name') }} Dashboard</h3>
         <p>Creatively crafted Dashboard for your needs</p>
       </div>
-
     </div>
+
+    @if(session('success_status'))
+    <div class = "alert alert-success">
+      {{session('success_status')}}
+    </div>
+    @endif
+
+    @if(session('failure_status'))
+    <div class = "alert alert-danger">
+      {{session('failure_status')}}
+    </div>
+    @endif
+
     <div class="row">
       <div class="col-sm-16 col-md-16 ">
         <div class="card">
           <div class="card-header">
-            <h5 class="card-title">All Subscribers' <small>Guardian</small> | <small>Total Number of Subscribers: </small>{{ countUser() }} </h5>
+            <h5 class="card-title">All Subscribers' <small>Personal Info</small> | <small>Total Number of Subscribers: </small>{{ countUser() }} </h5>
           </div>
           <div class="card-body">
             <table class="table " id="dataTables-example">
@@ -55,7 +67,9 @@
               </tfoot>
             </table>
             <!-- /.table-responsive -->
-
+            <div style="font-size:20px">
+              {{ $getListOfUsers->links() }}
+            </div>
           </div>
         </div>
       </div>

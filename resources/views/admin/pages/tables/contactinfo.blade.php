@@ -10,6 +10,23 @@
       </div>
 
     </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12 push-1">
+        @if(session('success_status'))
+        <div class = "alert alert-success">
+          {{session('success_status')}}
+        </div>
+        @endif
+
+        @if(session('failure_status'))
+        <div class = "alert alert-danger">
+          {{session('failure_status')}}
+        </div>
+        @endif
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-sm-12 col-md-12 push-1">
         <div class="card">
@@ -49,7 +66,9 @@
               </tfoot>
             </table>
             <!-- /.table-responsive -->
-
+            <div style="font-size:20px">
+              {{ $getListOfUsers->links() }}
+            </div>
           </div>
         </div>
       </div>

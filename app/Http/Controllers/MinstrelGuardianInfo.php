@@ -18,7 +18,7 @@ class MinstrelGuardianInfo extends Controller
     {
       $adminRole = Admin::where('user_id', Auth::user()->id)->first();
       $checkAdminRole = $adminRole->role;
-      $getListOfUsers = User::get();
+      $getListOfUsers = User::paginate(10);
       return view('admin.pages.tables.guardianinfo', compact('getListOfUsers', 'checkAdminRole'));
     }
 

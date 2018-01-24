@@ -41,7 +41,7 @@
                     <div class="col-lg-8 col-md-8">
                       <div class="form-group">
                         <label>First Name</label>
-                        <input id="first_name" name="first_name" type="text" class="form-control" value="{{ $getContactInfo->first_name }}" placeholder="Edit First Name" required>
+                        <input id="first_name" name="first_name" type="text" class="form-control" value="{{ $getContactInfo->first_name }}" placeholder="Edit First Name" disabled style="background-color: #847c59">
                         @if ($errors->has('first_name'))
                         <span class="help-block">
                           <strong>{{ $errors->first('first_name') }}</strong>
@@ -53,7 +53,7 @@
                     <div class="col-lg-8 col-md-8">
                       <div class="form-group">
                         <label>Last Name</label>
-                        <input id="last_name" name="last_name" type="text" class="form-control" value="{{ $getContactInfo->last_name }}" placeholder="Edit Last Name" required>
+                        <input id="last_name" name="last_name" type="text" class="form-control" value="{{ $getContactInfo->last_name }}" placeholder="Edit Last Name" disabled style="background-color: #847c59">
                         @if ($errors->has('last_name'))
                         <span class="help-block">
                           <strong>{{ $errors->first('last_name') }}</strong>

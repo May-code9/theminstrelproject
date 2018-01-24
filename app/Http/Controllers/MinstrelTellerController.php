@@ -21,7 +21,7 @@ class MinstrelTellerController extends Controller
     ->join('users', 'users.id', '=', 'serials.user_id')
     ->select('serials.id', 'users.first_name', 'users.last_name', 'users.age', 'users.gender',
     'users.school', 'users.state', 'users.handicap', 'serials.teller_no', 'confirmations.confirmed')
-    ->paginate(15);
+    ->paginate(10);
 
     return view("admin.pages.tables.teller", compact('checkAdminRole', 'getListOfUsers'));
 
