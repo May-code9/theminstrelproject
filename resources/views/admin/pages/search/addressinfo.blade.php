@@ -59,7 +59,10 @@
       <div class="col-sm-16 col-md-16">
         <div class="card">
           <div class="card-header">
-            <h5 class="card-title">Search Result(s)</h5>
+            <h5 class="card-title">Search Result for
+              <span style="color:#847c59"><strong>{{ $nameSearch }}</strong></span> has
+              <span style="color:#847c59"><strong>{{ $userCount }}</strong></span> item(s)
+            </h5>
           </div>
           <div class="card-body">
             <table class="table " id="dataTables-example">
