@@ -33,4 +33,9 @@ Route::group(['middleware'=>'isAdmin'], function() {
   Route::resource('guardianinfo', 'MinstrelGuardianInfo');
 
   Route::resource('personalinfo', 'MinstrelPersonalInfo');
+
+  //Search Controller
+  Route::get('searchaddress{page?}', ['as'=>'addressinfo.search', 'uses'=>'AdminSearchController@searchAddressInfo']);
+
+  Route::get('searchcontact{page?}', ['as'=>'contactinfo.search', 'uses'=>'AdminSearchController@searchContactInfo']);
 });

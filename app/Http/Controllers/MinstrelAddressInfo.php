@@ -18,7 +18,7 @@ class MinstrelAddressInfo extends Controller
     {
         $adminRole = Admin::where('user_id', Auth::user()->id)->first();
         $checkAdminRole = $adminRole->role;
-        $getListOfUsers = User::paginate(10);
+        $getListOfUsers = User::paginate(20);
         return view('admin.pages.tables.addressinfo', compact('getListOfUsers', 'checkAdminRole'));
     }
 
