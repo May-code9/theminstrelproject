@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Admin;
 use App\Serial;
+use App\Gallery;
 use App\Confirmation;
 
 class MinstrelProjectController extends Controller
@@ -25,7 +26,8 @@ class MinstrelProjectController extends Controller
       if(Auth::user()) {
         $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
       }
-      return view('pages.gallery', compact('gallery', 'cover', 'checkIfAdmin'));
+      $galleries = Gallery::orderBy('id', 'desc')->get();
+      return view('pages.gallery', compact('gallery', 'cover', 'checkIfAdmin', 'galleries'));
     }
     public function donate() {
       $donate = 'active';

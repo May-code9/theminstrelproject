@@ -24,6 +24,11 @@ Route::get('/about us', ['as'=>'minstrelAbout', 'uses'=>'MinstrelProjectControll
 Route::group(['middleware'=>'isAdmin'], function() {
   Route::get('/dashboard', ['as'=>'minstrelDashboard', 'uses'=>'MinstrelDashboardController@index']);
 
+  Route::get('/add images', ['as'=>'minstrelAddImages', 'uses'=>'MinstrelDashboardController@addGallery']);
+  Route::post('/add images', ['as'=>'minstrelAddImages', 'uses'=>'MinstrelDashboardController@addGallery']);
+  Route::post('/post/images', ['as'=>'minstrelPostImages', 'uses'=>'ImageController@postImages']);
+  Route::get('/view images', ['as'=>'minstrelViewImages', 'uses'=>'MinstrelDashboardController@viewGallery']);
+
   Route::resource('teller', 'MinstrelTellerController');
 
   Route::resource('addressinfo', 'MinstrelAddressInfo');

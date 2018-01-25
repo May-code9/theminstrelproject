@@ -24,4 +24,8 @@
   <!-- May CSS -->
   <link rel="stylesheet" href="{{asset('css/may.css')}}" type="text/css">
 
+  @if(Route::currentRouteName() == 'minstrelViewImages')
+  <!-- Swipebox CSS -->
+  <link href="{{ asset('vendor/masonry_swipebox/swipebox.min.css') }}" rel="stylesheet">
+  @endif
 </head>

@@ -125,8 +125,8 @@
         <div class="activity-block">
           <div class="media">
             <div class="media-body">
-              <h5><span class="spincreament">....</span><span class="badge badge-danger ml-2 "><i class="fa fa-caret-down"></i></span></h5>
-              <p>.....</p>
+              <h5><span class="spincreament">{{ countImages() }}</span><span class="badge badge-danger ml-2 "><i class="fa fa-caret-down"></i></span></h5>
+              <p>Images</p>
             </div>
             <i class="fa fa-money"></i>
           </div>

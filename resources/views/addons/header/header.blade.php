@@ -34,7 +34,7 @@
                   </li>
                   <li class="@if(isset($about)) {{ $about }} @endif"><a href="{{ route('minstrelAbout') }}">About</a>
                   </li>
-                  <li class="@if(isset($gallery)) {{ $gallery }} @endif"><a href="#">Gallery</a>
+                  <li class="@if(isset($gallery)) {{ $gallery }} @endif"><a href="{{ route('minstrelGallery') }}">Gallery</a>
                   </li>
                   <!-- <li><a href="#">Shop</a>
                     <ul class="rd-navbar-dropdown">

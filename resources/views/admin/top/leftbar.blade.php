@@ -37,6 +37,18 @@
       </ul>
     </li>
     <li class="nav-item"><a  href="{{ route('teller.index') }}" class="nav-link">Teller</a></li>
+    <li class="nav-item"><a  href="javascript:void(0)" class="nav-link menudropdown">Gallery<i class="fa fa-angle-down "></i></a>
+      <ul class="nav flex-column nav-second-level">
+        <li class="nav-item"><a class="nav-link" href="{{ route('minstrelViewImages') }}">View Images</a> </li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('minstrelAddImages') }}">Upload Images</a> </li>
+      </ul>
+    </li>
+    <!-- <li class="nav-item"><a  href="javascript:void(0)" class="nav-link menudropdown">Videos<i class="fa fa-angle-down "></i></a>
+      <ul class="nav flex-column nav-second-level">
+        <li class="nav-item"><a class="nav-link" href="#">View Videos</a> </li>
+        <li class="nav-item"><a class="nav-link" href="#">Upload Videos</a> </li>
+      </ul>
+    </li> -->
     <!-- <li class="nav-item"> <a href="javascript:void(0)" class="nav-link menudropdown ">Leagues<i class="fa fa-angle-down "></i></a>
       <ul class="nav flex-column nav-second-level">
         <li class="nav-item"><a class="nav-link" href="#">Add Leagues</a> </li>

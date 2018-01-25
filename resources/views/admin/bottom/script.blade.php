@@ -64,12 +64,11 @@ $("document").ready(function() {
   <script src="{{asset('js/adminux.js')}}" type="text/javascript"></script>
   <script src="{{asset('js/dashboard1.js')}}"></script>
 
-  @if(Route::currentRouteName() == 'leagues.create' || Route::currentRouteName() == 'games.create' || Route::currentRouteName() == 'scores.index')
-  <!-- Date picker  js-->
-  <script type="text/javascript" src="{{asset('vendor/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.min.js')}}"></script>
+  @if(Route::currentRouteName() == 'minstrelViewImages')
+  <!-- Gallery and swipebox JavaScript -->
+  <script src="{{ asset('vendor/masonry_swipebox/jquery.swipebox.js') }}"></script>
+  <script src="{{ asset('vendor/masonry_swipebox/masonry.pkgd.min.js') }}"></script>
 
-  <script>
-  "use strict"
-  $('.datepicker, .datepicker+button ').datepicker();
-</script>
-@endif
+  <!-- page level js -->
+  <script src="{{ asset('js/gallery.js') }}" type="text/javascript"></script>
+  @endif

@@ -2,6 +2,7 @@
 
 use App\Admin;
 use App\Serial;
+use App\Gallery;
 use App\Confirmation;
 use App\User;
 
@@ -27,5 +28,10 @@ function countSuperAdmin() {
 
 function countAdmin() {
   $counter = Admin::where('role', 3)->count();
+  return $counter;
+}
+
+function countImages() {
+  $counter = Gallery::count();
   return $counter;
 }
