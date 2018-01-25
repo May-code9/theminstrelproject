@@ -106,6 +106,34 @@
       </div>
     </div>
   </section>
+  <section class="section-70">
+          <div class="shell">
+            <div class="text-center">
+              <h4 class="home-headings-custom text-bold view-animate fadeInLeftSm delay-06">Winners Reward</h4>
+            </div>
+            <div class="offset-top-30 range range-xs-center range-lg-condensed section-products">
+              @forelse($prices as $price)
+              <div class="cell-xs-10 cell-lg-3 cell-sm-6 cell-md-4">
+                <div class="product">
+                  <div class="product-body"><h2 style="color:black">{{ $price->position }}</h2>
+                    <div class="offset-top-20"><a class="btn btn-ellipse btn-primary btn-icon btn-icon-left"><span>₦ {{ $price->price }}</span></a></div>
+                    <div class="offset-top-20">
+                      <h4 class="text-primary" style="color:black">+</h4>
+                    </div>
+                    <div class="offset-top-22">
+                      <h6 class="text-colour">{{ $price->others }}</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              @empty
+              <h1 class="text-colour">No price Detail Yet</h1>
+              @endforelse
+            </div>
+          </div>
+        </section>
+
+  <br>
   <!--Our Featured Courses-->
   <!-- <section class="bg-madison section-70 section-md-50 text-center">
     <div class="shell">
@@ -195,71 +223,33 @@
     </div>
   </section> -->
   <!-- Counters-->
-  <!-- <section class="text-center bg-index-body">
+  <section class="section-70 section-md-50 text-center bg-index-body">
     <div class="shell">
       <div class="range range-xs-center range-sm-left offset-top-0">
         <div class="cell-xs-10 cell-sm-7 section-image-aside section-image-aside-right">
-          <div style="background-image: url(images/home-01-846x1002.jpg)" class="section-image-aside-img veil reveal-sm-block view-animate zoomInSmall delay-04"></div>
+          <div style="background-image: url(images/home-01-846x1002.png)" class="section-image-aside-img veil reveal-sm-block view-animate zoomInSmall delay-04"></div>
           <div class="section-image-aside-body section-70 section-md-50 inset-md-right-70 inset-lg-right-110">
-            <h2 class="home-headings-custom text-bold view-animate fadeInLeftSm delay-04">Our Features</h2>
-            <div class="offset-top-35 offset-md-top-30 view-animate fadeInLeftSm delay-06">At Kids Tree, we see our aim in providing care and an early learning environment which is tailored to each individual child’s needs, in safe, secure, happy and relaxed surroundings. We are committed to your children’s success!</div>
-            <div class="text-center text-xs-left">
-              <div class="range range-xs-center range-md-left offset-top-35 counters">
-                <div class="cell-xs-6 view-animate fadeInLeftSm delay-08">
-
-                  <div class="unit unit-xs-horizontal unit-responsive-md counter-type-2">
-                    <div class="unit-left"><span class="icon icon-md text-madison fa-graduation-cap"></span></div>
-                    <div class="unit-body">
-                      <div class="h3 text-bold text-primary"><span data-speed="1300" data-from="0" data-to="15" class="counter"></span><span></span></div>
-                      <div class="offset-top-3">
-                        <h6 class="text-black font-accent">Awards</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="cell-xs-6 offset-top-65 offset-xs-top-0 view-animate fadeInLeftSm delay-04">
-
-                  <div class="unit unit-xs-horizontal unit-responsive-md counter-type-2">
-                    <div class="unit-left"><span class="icon icon-md text-madison fa-suitcase"></span></div>
-                    <div class="unit-body">
-                      <div class="h3 text-bold text-primary"><span data-speed="1250" data-from="0" data-to="30" class="counter"></span><span>+</span></div>
-                      <div class="offset-top-3">
-                        <h6 class="text-black font-accent">Certified Teachers</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="cell-xs-6 offset-top-65 view-animate fadeInLeftSm delay-1">
-
-                  <div class="unit unit-xs-horizontal unit-responsive-md counter-type-2">
-                    <div class="unit-left"><span class="icon icon-md text-madison fa-building"></span></div>
-                    <div class="unit-body">
-                      <div class="h3 text-bold text-primary offset-top-5"><span data-step="500" data-from="0" data-to="10" class="counter"></span></div>
-                      <div class="offset-top-3">
-                        <h6 class="text-black font-accent">Featured Programs </h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="cell-xs-6 offset-top-65 view-animate fadeInLeftSm delay-06">
-
-                  <div class="unit unit-xs-horizontal unit-responsive-md counter-type-2">
-                    <div class="unit-left"><span class="icon icon-md text-madison fa-users"></span></div>
-                    <div class="unit-body">
-                      <div class="h3 text-bold text-primary offset-top-5"><span data-step="1500" data-from="0" data-to="100" class="counter"></span></div>
-                      <div class="offset-top-3">
-                        <h6 class="text-black font-accent">Children</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <h2 class="home-headings-custom text-bold view-animate fadeInLeftSm delay-04">How to Register</h2>
+            <div class="offset-top-35 offset-md-top-30 view-animate fadeInLeftSm delay-06">
+              <ol>
+                <li style="font-size: 17px; text-align: justify">Click <a href="{{ route('register') }}">sign up</a>, register with valid information </li>
+                <li style="font-size: 17px; text-align: justify">Make a mobile transfer or proceed to the bank to make a payment of ₦1000 to
+                  <ul>
+                    <li>Account Name: Noah's 1.1.601 Teenage Club</li>
+                    <li>Account Number: 2857203011</li>
+                    <li>Bank: FCMB</li>
+                  </ul>
+                  Send your name and teller number/transfer description to 08119055551 or 07066803471
+                </li>
+                <li style="font-size: 17px; text-align: justify">Login. On the Home Page click the <strong>Fill Teller Number Button</strong>. Input Teller Number or Transfer description</li>
+                <li style="font-size: 17px; text-align: justify">Please Note that there is no refund of money after payment, Terms and condition apply</li>
+              </ol>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- Events-->
   <!-- <section class="bg-catskill">
     <div class="shell-wide section-70 section-md-50">
@@ -369,6 +359,7 @@
       <div class="offset-top-50 offset-lg-top-56 view-animate fadeInUpSmall"><a href="calendar.php" class="btn btn-ellipse btn-icon btn-icon-right btn-primary"><span class="icon fa-arrow-right"></span><span>View Event Calendar</span></a></div>
     </div>
   </section> -->
+  <hr style="margin:0px">
   <!-- Testimonials-->
   <section class="context-dark position-relative">
     <!-- RD Parallax-->
@@ -544,7 +535,7 @@
   <section>
     <!-- RD Google Map-->
     <div class="rd-google-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127221.86632073516!2d6.963504972442749!3d4.824332623180287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cea39f2c48e3%3A0x53562bdd7d8832db!2sPort+Harcourt!5e0!3m2!1sen!2sng!4v1516373256193" width="1900" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d127221.86632073596!2d6.963504972442756!3d4.824332623180291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1516873046242" width="1900" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
       <!-- <ul class="rd-google-map__locations">
         <li data-x="-73.9874068" data-y="40.643180">
           <p>9870 St Vincent Place, Glasgow</p>

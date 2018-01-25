@@ -39,6 +39,8 @@ Route::group(['middleware'=>'isAdmin'], function() {
 
   Route::resource('personalinfo', 'MinstrelPersonalInfo');
 
+  Route::resource('pricelist', 'PriceController');
+
   //Search Controller
   Route::get('searchaddress{page?}', ['as'=>'addressinfo.search', 'uses'=>'AdminSearchController@searchAddressInfo']);
 

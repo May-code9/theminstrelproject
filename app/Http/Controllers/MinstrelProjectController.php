@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Admin;
 use App\Serial;
+use App\Price;
 use App\Gallery;
 use App\Confirmation;
 
@@ -18,7 +19,8 @@ class MinstrelProjectController extends Controller
         $checkForSerialNumber = Serial::where('user_id', Auth::user()->id)->count();
         $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
       }
-      return view('pages.index', compact('home', 'cover', 'checkForSerialNumber', 'checkIfAdmin'));
+      $prices = Price::get();
+      return view('pages.index', compact('home', 'cover', 'checkForSerialNumber', 'checkIfAdmin', 'prices'));
     }
     public function gallery() {
       $gallery = 'active';

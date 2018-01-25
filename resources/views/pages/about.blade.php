@@ -85,7 +85,7 @@ About Us | {{ config('app.name') }}
             <div data-group="tabs-group-default" class="resp-tabs-container text-sm-left tabs-group-default">
               <div>
                 <div class="inset-lg-left-30">
-                  <p>To Start Registration, you <a href="{{ route('register') }}">sign up</a>. You will be required to pay 1000, (click Account Details Tab for more Information), then text your teller number to <strong>08119055551 or 07066803471</strong>. Finally, Input your bank Teller number</p>
+                  <p>To Start Registration, you <a href="{{ route('register') }}">sign up</a>. You will be required to pay ₦1000, (click Account Details Tab for more Information), then text your teller number to <strong>08119055551 or 07066803471</strong>. Finally, Input your bank Teller number</p>
                 </div>
               </div>
               <div>

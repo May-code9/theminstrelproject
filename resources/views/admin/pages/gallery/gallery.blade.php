@@ -10,18 +10,22 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-sm-12 col-md-12 push-1">
+        @if(session('success_status'))
+        <div class = "alert alert-success">
+          {{session('success_status')}}
+        </div>
+        @endif
 
-    @if(session('success_status'))
-    <div class = "alert alert-success">
-      {{session('success_status')}}
+        @if(session('failure_status'))
+        <div class = "alert alert-danger">
+          {{session('failure_status')}}
+        </div>
+        @endif
+      </div>
     </div>
-    @endif
 
-    @if(session('failure_status'))
-    <div class = "alert alert-danger">
-      {{session('failure_status')}}
-    </div>
-    @endif
 
     <!-- Edit Scores -->
     <div class="row">

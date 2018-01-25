@@ -100,8 +100,6 @@
                         @endif
                       </div>
                     </div>
-
-                    <input id="admin_id" name="admin_id" type="hidden" class="form-control" value="{{ Auth::user()->id }}">
                   </div>
                 </div>
               </div>

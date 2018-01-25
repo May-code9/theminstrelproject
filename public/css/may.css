@@ -15,6 +15,23 @@
     left: 12.66666666666666%;
   }
 }
+@media (min-width: 768px) {
+  .push-2 {
+    left: 20.66666666666666%;
+  }
+}
+
+@media (min-width: 992px) {
+  .push-2 {
+    left: 20.66666666666666%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .push-2 {
+    left: 24.66666666666666%;
+  }
+}
 /* @media (max-width: 768px) {
 th, td {
 border: none;
