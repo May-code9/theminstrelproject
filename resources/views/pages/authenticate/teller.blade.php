@@ -34,11 +34,11 @@ Teller Number | {{ config('app.name') }}
                       </tr>
                       <tr>
                         <td>Account Name</td>
-                        <td>Noah's 1.1.601 Teenage Club</td>
+                        <td>Noah's 1.1.601 Teenage Club Minstrel Project</td>
                       </tr>
                       <tr>
                         <td>Account Number</td>
-                        <td>2857203011</td>
+                        <td>5045801011</td>
                       </tr>
                     </tbody>
                   </table>

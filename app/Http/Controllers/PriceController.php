@@ -33,7 +33,7 @@ class PriceController extends Controller
       $adminRole = Admin::where('user_id', Auth::user()->id)->first();
       $checkAdminRole = $adminRole->role;
       $price = Price::count();
-
+      
       return view('admin.pages.crud.createPrice', compact('checkAdminRole', 'price'));
     }
 
@@ -45,8 +45,13 @@ class PriceController extends Controller
      */
     public function store(Request $request)
     {
-        Price::create($request->all());
-        return redirect()->back()->with("success_status", "Price Added");
+        $price = Price::count();
+        if($price <= 2) {
+          Price::create($request->all());
+          return redirect()->back()->with("success_status", "Price Added");
+        } else {
+          return redirect()->back()->with("failure_status", "Could Not Add, Maximum Price Input Reached");
+        }
     }
 
     /**

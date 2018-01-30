@@ -24,7 +24,7 @@
                     <h2 class="text-bold">Scouting, Developing and Mentoring young talents.</h2>
                   </div>
                   <div data-caption-animate="fadeInUp" data-caption-delay="150" data-caption-duration="1700" class="offset-top-20 offset-xs-top-40 offset-xl-top-60">
-                    <h4 class="text-regular font-default">{{ config('app.name') }} is an exclusive initiative of a non-government agency known as <br> <strong>NOAH’s 1:1.601 TEENAGE CLUB</strong></h4>
+                    <h4 class="text-regular font-default">{{ config('app.name') }} is an exclusive initiative of a non-governmental agency known as <br> <strong>NOAH’s 1:1.601 TEENAGE CLUB</strong></h4>
                   </div>
                   <div data-caption-animate="fadeInUp" data-caption-delay="400" data-caption-duration="1700" class="offset-top-20 offset-xl-top-40">
                     @guest
@@ -72,7 +72,7 @@
                     <h2 class="text-bold">We Offer Different Kinds of Activities.</h2>
                   </div>
                   <div data-caption-animate="fadeInUp" data-caption-delay="150" data-caption-duration="1700" class="offset-top-20 offset-xs-top-40 offset-xl-top-60">
-                    <h4 class="text-regular font-default">With us, your kid will enjoy plenty of different activities that will develop them and act as a perfect ground for further development. Explore the bright future of your child at {{ config('app.name') }}!</h4>
+                    <h4 class="text-regular font-default">With us, your children will enjoy plenty of activities that will develop them and act as a perfect ground for further development. Explore the bright future of your child at {{ config('app.name') }}!</h4>
                   </div>
                   <div data-caption-animate="fadeInUp" data-caption-delay="400" data-caption-duration="1700" class="offset-top-20 offset-xl-top-40"><a href="{{ route('register') }}" class="btn btn-ellipse btn-madison">Sign Up for Excursion</a>
                     <div class="inset-xs-left-30 reveal-lg-inline-block"><a href="{{ route('minstrelAbout') }}" class="btn btn-ellipse btn-primary-transparent veil reveal-lg-inline-block">Learn More</a></div>
@@ -235,8 +235,8 @@
                 <li style="font-size: 17px; text-align: justify">Click <a href="{{ route('register') }}">sign up</a>, register with valid information </li>
                 <li style="font-size: 17px; text-align: justify">Make a mobile transfer or proceed to the bank to make a payment of ₦1000 to
                   <ul>
-                    <li>Account Name: Noah's 1.1.601 Teenage Club</li>
-                    <li>Account Number: 2857203011</li>
+                    <li>Account Name: Noah's 1.1.601 Teenage Club Minstrel Project</li>
+                    <li>Account Number: 5045801011</li>
                     <li>Bank: FCMB</li>
                   </ul>
                   Send your name and teller number/transfer description to 08119055551 or 07066803471
