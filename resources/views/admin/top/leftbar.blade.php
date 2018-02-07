@@ -45,7 +45,7 @@
     </li>
     <li class="nav-item"><a  href="javascript:void(0)" class="nav-link menudropdown">Video<i class="fa fa-angle-down "></i></a>
       <ul class="nav flex-column nav-second-level">
-        <li class="nav-item"><a class="nav-link" href="#">View Videos</a> </li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('videoupload.index') }}">View Videos</a> </li>
         <li class="nav-item"><a class="nav-link" href="{{ route('videoupload.create') }}">Upload Videos</a> </li>
       </ul>
     </li>

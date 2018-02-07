@@ -2,6 +2,7 @@
 
 use App\Admin;
 use App\Serial;
+use App\Video;
 use App\Gallery;
 use App\Confirmation;
 use App\User;
@@ -33,5 +34,9 @@ function countAdmin() {
 
 function countImages() {
   $counter = Gallery::count();
+  return $counter;
+}
+function countVideos() {
+  $counter = Video::count();
   return $counter;
 }

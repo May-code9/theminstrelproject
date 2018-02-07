@@ -16,7 +16,11 @@ class VideoController extends Controller
      */
     public function index()
     {
-        //
+      $adminRole = Admin::where('user_id', Auth::user()->id)->first();
+      $checkAdminRole = $adminRole->role;
+      $videolinks = Video::orderBy('id', 'desc')->paginate(8);
+
+      return view("admin.pages.video.viewvideo", compact("checkAdminRole", "videolinks"));
     }
 
     /**
@@ -56,7 +60,7 @@ class VideoController extends Controller
      */
     public function show($id)
     {
-        //
+      //
     }
 
     /**
@@ -67,7 +71,11 @@ class VideoController extends Controller
      */
     public function edit($id)
     {
-        //
+      $adminRole = Admin::where('user_id', Auth::user()->id)->first();
+      $checkAdminRole = $adminRole->role;
+      $videolinks = Video::orderBy('id', 'desc')->findOrFail($id);
+
+      return view("admin.pages.video.editvideo", compact("checkAdminRole", "videolinks"));
     }
 
     /**
@@ -79,7 +87,9 @@ class VideoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $videolink = Video::findOrFail($id);
+        $videolink->update($request->all());
+        return redirect('/videoupload')->with("success_status", "Video Details Updated");
     }
 
     /**

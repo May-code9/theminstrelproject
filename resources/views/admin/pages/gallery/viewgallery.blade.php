@@ -23,6 +23,9 @@
             <h1>No Images Yet</h1>
             @endforelse
           </div>
+          <div style="font-size:20px">
+            {{ $galleries->links() }}
+          </div>
         </div>
       </div>
     </div>
