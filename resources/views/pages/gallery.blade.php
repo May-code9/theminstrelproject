@@ -10,7 +10,7 @@ Gallery | {{ config('app.name') }}
     <div class="hr bg-gray-light"></div>
   </div>
   <!-- Portfolio Grid-->
-  <section style="margin-top: 30px">
+  <section style="margin-top: 30px; margin-bottom:30px">
     <div class="shell">
       <h2 class="text-colour">{{ config('app.name') }} Images</h2>
       <div class="offset-top-60">
@@ -36,6 +36,9 @@ Gallery | {{ config('app.name') }}
       </div>
     </div>
   </section>
+  <div style="font-size:20px">
+    {{ $galleries->links() }}
+  </div>
 </main>
 <!-- Page Footer-->
 @endsection

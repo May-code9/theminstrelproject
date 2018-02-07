@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Admin;
 use App\Serial;
+use App\Video;
 use App\Price;
 use App\Gallery;
 use App\Confirmation;
@@ -23,13 +24,23 @@ class MinstrelProjectController extends Controller
       return view('pages.index', compact('home', 'cover', 'checkForSerialNumber', 'checkIfAdmin', 'prices'));
     }
     public function gallery() {
-      $gallery = 'active';
+      $hall = 'active';
       $cover = 'Gallery';
       if(Auth::user()) {
         $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
       }
-      $galleries = Gallery::orderBy('id', 'desc')->get();
-      return view('pages.gallery', compact('gallery', 'cover', 'checkIfAdmin', 'galleries'));
+      $galleries = Gallery::orderBy('id', 'desc')->paginate(16);
+      return view('pages.gallery', compact('hall', 'cover', 'checkIfAdmin', 'galleries'));
+    }
+    public function video() {
+      $video = 'active';
+      $cover = 'Video';
+      if(Auth::user()) {
+        $checkIfAdmin = Admin::where('user_id', Auth::user()->id)->count();
+      }
+      $videouploads = Video::orderBy('id', 'desc')->paginate(6);
+      //$videos = Gallery::orderBy('id', 'desc')->get();
+      return view('pages.video', compact('video', 'cover', 'checkIfAdmin', 'videouploads'));
     }
     public function donate() {
       $donate = 'active';

@@ -15,6 +15,7 @@ Auth::routes();
 
 Route::get('/', ['as'=>'minstrelHome', 'uses'=>'MinstrelProjectController@index']);
 Route::get('/gallery', ['as'=>'minstrelGallery', 'uses'=>'MinstrelProjectController@gallery']);
+Route::get('/video', ['as'=>'minstrelVideo', 'uses'=>'MinstrelProjectController@video']);
 Route::get('/donate', ['as'=>'minstrelDonate', 'uses'=>'MinstrelProjectController@donate']);
 Route::get('/contact', ['as'=>'minstrelContact', 'uses'=>'MinstrelProjectController@contact']);
 Route::get('/fill teller', ['as'=>'minstrelTeller', 'uses'=>'MinstrelProjectController@teller']);
@@ -40,6 +41,8 @@ Route::group(['middleware'=>'isAdmin'], function() {
   Route::resource('personalinfo', 'MinstrelPersonalInfo');
 
   Route::resource('pricelist', 'PriceController');
+
+  Route::resource('videoupload', 'VideoController');
 
   //Search Controller
   Route::get('searchaddress{page?}', ['as'=>'addressinfo.search', 'uses'=>'AdminSearchController@searchAddressInfo']);
