@@ -9,11 +9,14 @@ class Video extends Model
     protected $fillable = [
       'video_title', 'link', 'date_of_video', 'time_of_video'
     ];
+    protected $dates = [
+      'date_of_video'
+    ];
 
     public function getDayAttribute() {
-      return date_format($this->created_at, 'd');
+      return date_format($this->date_of_video, 'd');
     }
     public function getMonthAttribute() {
-      return date_format($this->created_at, 'M');
+      return date_format($this->date_of_video, 'M');
     }
 }
