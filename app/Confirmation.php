@@ -24,4 +24,5 @@ class Confirmation extends Model
         $this->attributes['confirmed'] = 1;
       }
     }
+    
 }

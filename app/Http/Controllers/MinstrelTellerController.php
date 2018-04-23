@@ -48,7 +48,7 @@ class MinstrelTellerController extends Controller
     $checkSerial = Serial::join('confirmations', 'confirmations.id', '=', 'serials.confirmation_id')
     ->join('users', 'users.id', '=', 'serials.user_id')
     ->select('serials.id', 'users.first_name', 'users.last_name', 'users.age', 'users.gender',
-    'users.address', 'users.state', 'users.handicap', 'serials.teller_no', 'confirmations.confirmed')
+    'users.address', 'users.state', 'users.handicap', 'serials.teller_no', 'confirmations.confirmed', 'serials.confirmation_id')
     ->findOrFail($id);
     $adminRole = Admin::where('user_id', Auth::user()->id)->first();
     $checkAdminRole = $adminRole->role;
@@ -60,8 +60,8 @@ class MinstrelTellerController extends Controller
   {
     $activateUser = User::findOrFail($id);
     $checkSerial = Serial::findOrFail($id);
-    $checkConfirm = Confirmation::findOrFail($id);
-
+    $confirmation_id = $request->input('confirmation_id');
+    $checkConfirm = Confirmation::findOrFail($confirmation_id);
     $checkSerial->update($request->all());
     $checkConfirm->update($request->all());
 

@@ -125,7 +125,7 @@ class AdminSearchController extends Controller
         ->where('first_name', 'LIKE', '%'.$nameSearch.'%')
         ->orWhere('last_name', 'LIKE', '%'.$nameSearch.'%')
         ->orWhere('teller_no', 'LIKE', '%'.$nameSearch.'%')
-        ->get();
+        ->count();
       }
       return view('admin.pages.search.tellerno', compact('nameSearch', 'users', 'checkAdminRole', 'userCount'));
     }

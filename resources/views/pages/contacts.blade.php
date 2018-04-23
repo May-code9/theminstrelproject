@@ -17,36 +17,40 @@ Contact | {{ config('app.name') }}
             <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email. You can also use a quick contact form below or visit our office personally. We would be happy to answer your questions.</p>
           </div>
           <div class="offset-top-30">
-            <form data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" class="rd-mailform text-left">
+            @if(Session::has('success_status'))
+              <div class="alert alert-success">{{ Session::get('success_status') }}</div>
+            @else
+            <form  method="post" action="{{ route('contact.store') }}" class="text-left">
+              {{ csrf_field() }}
               <div class="range">
                 <div class="cell-lg-6">
                   <div class="form-group">
-                    <label for="contact-me-name" class="form-label form-label-outside">First name</label>
-                    <input id="contact-me-name" type="text" name="name" data-constraints="@Required" class="form-control">
+                    <label  class="form-label form-label-outside">First name</label>
+                    <input id="first_name" type="text" name="first_name" required class="form-control">
                   </div>
                 </div>
                 <div class="cell-lg-6 offset-top-12 offset-lg-top-0">
                   <div class="form-group">
-                    <label for="contact-me-last-name" class="form-label form-label-outside">Last name</label>
-                    <input id="contact-me-last-name" type="text" name="last-name" data-constraints="@Required" class="form-control">
+                    <label class="form-label form-label-outside">Last name</label>
+                    <input id="last_name" type="text" name="last_name" required class="form-control">
                   </div>
                 </div>
                 <div class="cell-lg-6 offset-top-12">
                   <div class="form-group">
-                    <label for="contact-me-email" class="form-label form-label-outside">E-mail</label>
-                    <input id="contact-me-email" type="email" name="email" data-constraints="@Required @Email" class="form-control">
+                    <label  class="form-label form-label-outside">E-mail</label>
+                    <input id="email" type="email" name="email" required class="form-control">
                   </div>
                 </div>
                 <div class="cell-lg-6 offset-top-12">
                   <div class="form-group">
-                    <label for="contact-me-phone" class="form-label form-label-outside">Phone</label>
-                    <input id="contact-me-phone" type="text" name="phone" data-constraints="@Required @IsNumeric" class="form-control">
+                    <label  class="form-label form-label-outside">Phone</label>
+                    <input id="phone_number" type="text" name="phone_number" required class="form-control">
                   </div>
                 </div>
                 <div class="cell-lg-12 offset-top-12">
                   <div class="form-group">
-                    <label for="contact-me-message" class="form-label form-label-outside">Message</label>
-                    <textarea id="contact-me-message" name="message" data-constraints="@Required" style="height: 220px" class="form-control"></textarea>
+                    <label class="form-label form-label-outside">Message</label>
+                    <textarea id="message" name="message" required style="height: 220px" class="form-control"></textarea>
                   </div>
                 </div>
               </div>
@@ -54,6 +58,7 @@ Contact | {{ config('app.name') }}
                 <button type="submit" class="btn btn-ellipse btn-primary">Send Message</button>
               </div>
             </form>
+            @endif
           </div>
         </div>
         <div class="cell-xs-10 cell-md-4 offset-top-65 offset-md-top-0 text-left">

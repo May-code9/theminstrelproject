@@ -109,7 +109,9 @@
               </tfoot>
             </table>
             <!-- /.table-responsive -->
-
+            <div style="font-size:20px">
+              {{ $getListOfUsers->links() }}
+            </div>
           </div>
         </div>
       </div>

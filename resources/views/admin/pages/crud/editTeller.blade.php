@@ -65,6 +65,8 @@
                 </div>
               </div>
 
+              <input id="confirmation_id" name="confirmation_id" type="hidden" class="form-control" value="{{ $checkSerial->confirmation_id }}">
+
               <br/>
               <br/>
 

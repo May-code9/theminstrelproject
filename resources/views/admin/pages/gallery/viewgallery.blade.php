@@ -9,22 +9,40 @@
         <p>Creatively crafted Dashboard for your needs</p>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12 push-1">
+        @if(session('success_status'))
+        <div class = "alert alert-success">
+          {{session('success_status')}}
+        </div>
+        @endif
+
+        @if(session('failure_status'))
+        <div class = "alert alert-danger">
+          {{session('failure_status')}}
+        </div>
+        @endif
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-sm-16">
         <div class="row">
           <div class="grid three" style="position: relative; height: 1157px;">
-            @forelse($galleries as $gallery)
+            @forelse($galleryImages as $galleryImage)
             <div class="grid-item" style="position: absolute; left: 0px; top: 0px;">
-              <a href="{{ asset('images/gallery/' . $gallery->large_image ) }}" rel="gallery-1" class="swipebox" title="My Caption">
-                <img src="{{ asset('images/gallery/' . $gallery->mini_image ) }}" alt="image">
+              <a href="{{ asset('images/gallery/' . $galleryImage->large_image ) }}" rel="gallery-1" class="swipebox" title="My Caption">
+                <img src="{{ asset('images/gallery/' . $galleryImage->mini_image ) }}" alt="image">
               </a>
+              <a href="/SingleImage/{{ $galleryImage->id }}">Edit</a>
             </div>
             @empty
             <h1>No Images Yet</h1>
             @endforelse
           </div>
           <div style="font-size:20px">
-            {{ $galleries->links() }}
+            {{ $galleryImages->links() }}
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ About Us | {{ config('app.name') }}
         <div class="cell-sm-4 cell-sm-push-2 text-sm-left">
           <div class="inset-sm-left-30 ">
             <img src="images/flier2.jpg" width="340" height="340" alt="" class="img-responsive reveal-inline-block img-rounded"> <hr>
-            <img src="images/flier.jpg" width="340" height="340" alt="" class="img-responsive reveal-inline-block img-rounded">
+            <img src="images/flier.jpeg" width="340" height="340" alt="" class="img-responsive reveal-inline-block img-rounded">
             <!-- <div class="offset-top-20">
               <h6 class="text-primary text-bold">Christopher Smith</h6>
             </div>
@@ -119,9 +119,12 @@ About Us | {{ config('app.name') }}
   <section class="bg-index-body">
     <div class="shell-wide">
       <div class="range">
-        <div class="cell-sm-4"><img src="images/minstrelProject3.png" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
-        <div class="cell-sm-4"><img src="images/minstrelProject.png" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
-        <div class="cell-sm-4"><img src="images/minstrelProject2.png" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
+        <div class="cell-sm-2"><img src="images/minstrelProject3.png" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
+        <div class="cell-sm-2"><img src="images/minstrelProject2.png" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
+        <div class="cell-sm-2"><img src="images/daar.png" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
+        <div class="cell-sm-2"><img src="images/ait.jpg" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
+        <div class="cell-sm-2"><img src="images/raypower.jpg" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
+        <div class="cell-sm-2"><img src="images/minstrelProject.png" width="570" height="370" alt="" class="img-responsive reveal-inline-block"></div>
       </div>
     </div>
   </section>

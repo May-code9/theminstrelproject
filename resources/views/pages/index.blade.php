@@ -29,10 +29,12 @@
                   <div data-caption-animate="fadeInUp" data-caption-delay="400" data-caption-duration="1700" class="offset-top-20 offset-xl-top-40">
                     @guest
                     <a href="{{ route('register') }}" class="btn btn-madison btn-ellipse">Sign Up</a>
-                    @elseif($checkForSerialNumber == 0)
+                    @else
+                    @if($checkForSerialNumber == 0)
                     <a href="{{ route('minstrelTeller') }}" class="btn btn-madison btn-ellipse">Fill Teller Number</a>
-                    @endguest
+                    @endif
                     <div class="inset-xs-left-30 reveal-lg-inline-block"><a href="{{ route('minstrelAbout') }}" class="btn btn-primary-transparent btn-ellipse veil reveal-lg-inline-block">Learn More</a></div>
+                    @endguest
                   </div>
                 </div>
               </div>

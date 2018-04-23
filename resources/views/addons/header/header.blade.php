@@ -62,6 +62,8 @@
                   @elseif($checkIfAdmin == 1)
                   <li><a href="#">{{ Auth::user()->first_name }}</a>
                     <ul class="rd-navbar-dropdown">
+                      <li><a href="{{ route('minstrelTeller') }}">Edit Teller No</a></li>
+                      <li><a href="{{ route('minstrelDashboard') }}">Dashboard</a></li>
                       <li><a href="{{ route('logout') }}"
                           onclick="event.preventDefault();
                           document.getElementById('logout-form').submit();">Logout</a>
@@ -69,12 +71,12 @@
                               {{ csrf_field() }}
                           </form>
                       </li>
-                      <li><a href="{{ route('minstrelDashboard') }}">Dashboard</a></li>
                     </ul>
                   </li>
                   @else
                   <li><a href="#">{{ Auth::user()->first_name }}</a>
                     <ul class="rd-navbar-dropdown">
+                      <li><a href="{{ route('minstrelTeller') }}">Edit Teller No</a></li>
                       <li><a href="{{ route('logout') }}"
                           onclick="event.preventDefault();
                           document.getElementById('logout-form').submit();">Logout</a>
@@ -85,6 +87,7 @@
                     </ul>
                   </li>
                   @endguest
+
                   <!-- <li class="veil-lg"><a href="shopping-cart.php">Shopping Cart (2)</a></li> -->
                 </ul>
                 <!--RD Navbar Mobile Search-->

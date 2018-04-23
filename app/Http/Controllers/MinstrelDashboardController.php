@@ -20,10 +20,17 @@ class MinstrelDashboardController extends Controller
     $checkAdminRole = $adminRole->role;
     return view('admin.pages.gallery.gallery', compact('checkAdminRole'));
   }
-  public function viewGallery() {
+
+  public function viewGalleryImg() {
     $adminRole = Admin::where('user_id', Auth::user()->id)->first();
     $checkAdminRole = $adminRole->role;
-    $galleries = Gallery::orderBy('id', 'desc')->paginate(6);
-    return view('admin.pages.gallery.viewgallery', compact('checkAdminRole', 'galleries'));
+    $galleryImages = Gallery::orderBy('id', 'desc')->paginate(6);
+    return view('admin.pages.gallery.viewgallery', compact('checkAdminRole', 'galleryImages'));
+  }
+  public function editGalleryImg($id) {
+    $adminRole = Admin::where('user_id', Auth::user()->id)->first();
+    $checkAdminRole = $adminRole->role;
+    $galleryImages = Gallery::findOrFail($id);
+    return view('admin.pages.gallery.edit', compact('checkAdminRole', 'galleryImages'));
   }
 }
