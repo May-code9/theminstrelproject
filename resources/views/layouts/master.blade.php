@@ -26,6 +26,41 @@
   <![endif]-->
 </head>
 <body>
+  <div id="myModal" class="modal fade" role="dialog" style="background: rgba(255, 255, 255, 0.9);">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" style="color:black">&times;</button>
+          <h4 class="modal-title" style="text-align: center; color: black">AUDITIONS!!!</h4>
+        </div>
+        <div class="modal-body" style="padding-left: 20px;">
+          <h4 style="color: black">Calabar Audition kicks off on the 19th of May, 2018</h4>
+          <ul style="font-size: 18px; color: black">
+            <li>Venue: Dannic Hotel</li>
+            <li>Address: Ekorinim 2 Off Muritala Mohammed Way, Calabar, Nigeria</li>
+            <li>Time: 9am</li>
+          </ul>
+          <h4 style="color: black">Enugu Audition kicks off on the 23rd of May, 2018</h4>
+          <ul style="font-size: 18px; color: black">
+            <li>Venue: Dannic Hotel</li>
+            <li>Address: 3 Edem Close, New Haven, Enugu, Nigeria</li>
+            <li>Time: 9am</li>
+          </ul>
+          <h4 style="color: black">Port Harcourt Audition holds on the 26th and 27th of May, 2018</h4>
+          <ul style="font-size: 18px; color: black">
+            <li>Venue: Dannic Hotel</li>
+            <li>Address: Plot 33 Circular Road, Presidential Estate, GRA Phase 2, Port Harcourt, Nigeria</li>
+            <li>Time: 10am on 26th &amp; 12noon on 27th</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
   <!-- Page-->
   <div class="page text-center">
     @include('addons.header.header')

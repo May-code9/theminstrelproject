@@ -38,21 +38,9 @@
                   </li>
                   <li class="@if(isset($video)) {{ $video }} @endif"><a href="{{ route('minstrelVideo') }}">Video</a>
                   </li>
-                  <!-- <li><a href="#">Shop</a>
-                    <ul class="rd-navbar-dropdown">
-                      <li><a href="product-catalog.php">Product Catalog</a>
-                      </li>
-                      <li><a href="single-product.php">Single Product</a>
-                      </li>
-                      <li><a href="shopping-cart.php">Shopping Cart</a>
-                      </li>
-                      <li><a href="checkout.php">Checkout</a>
-                      </li>
-                    </ul>
-                  </li> -->
                   <li class="@if(isset($donate)) {{ $donate }} @endif"><a href="#">Donate</a>
                   </li>
-                  <li class="@if(isset($contact)) {{ $contact }} @endif"><a href="#">Contacts</a>
+                  <li class="@if(isset($contact)) {{ $contact }} @endif"><a href="{{ route('minstrelContact') }}">Contacts</a>
                   </li>
                   @guest
                   <li class="@if(isset($login_active)) {{ $login_active }} @endif"><a href="{{ route('login') }}">Login</a>

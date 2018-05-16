@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Exception;
 use Auth;
 use Mail;
 use App\Mail\NewContactRequest;
@@ -20,9 +21,13 @@ class MailController extends Controller
     return view('pages.contacts', compact('contact', 'cover', 'checkIfAdmin'));
   }
   public function storeContact(ContactRequest $request) {
-    Mail::to('contact@theminstrelproject.org')
-    ->cc($request->email)
-    ->send(new NewContactRequest($request));
-    return redirect()->back()->with('success_status', 'Message Delivered');
+    try {
+      Mail::to('contact@theminstrelproject.org')
+      ->cc($request->email)
+      ->send(new NewContactRequest($request));
+      return redirect()->back()->with('success_status', 'Message Delivered');
+    } catch (Exception $e) {
+      return redirect()->back()->with('failure_status', 'Message Not Delivered, please try again later');
+    }
   }
 }
