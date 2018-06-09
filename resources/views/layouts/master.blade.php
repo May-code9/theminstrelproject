@@ -26,9 +26,9 @@
   <![endif]-->
 </head>
 <body>
-  <div id="myModal" class="modal fade" role="dialog" style="background: rgba(255, 255, 255, 0.9);">
+  <!-- <div id="myModal" class="modal fade" role="dialog" style="background: rgba(255, 255, 255, 0.9);">
     <div class="modal-dialog modal-lg">
-      <!-- Modal content-->
+
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" style="color:black">&times;</button>
@@ -60,29 +60,13 @@
       </div>
 
     </div>
-  </div>
+  </div> -->
   <!-- Page-->
   <div class="page text-center">
     @include('addons.header.header')
 
     @yield('content')
 
-    <!-- Modal-->
-    <div id="myModal" role="dialog" class="modal fade">
-      <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" data-dismiss="modal" class="close mdi mdi-window-close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe data-src="//www.youtube.com/embed/-AhmuMqZB0s?wmode=transparent" class="embed-responsive-item youtube-player"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     @include('addons.footer.footer')
   </body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.php?id=GTM-P9FT69"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager -->
   </html>
